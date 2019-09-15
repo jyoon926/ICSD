@@ -23,11 +23,41 @@ body {
   font-size: 16px;
 }
 
+.button {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  border-bottom: 2px solid white;
+  width: 124px;
+}
+
+.button img {
+  height: 15px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 12px 30px;
+}
+
 header {
   position: fixed;
-  height: 80px;
+  height: 50px;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,8 +71,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #c7c7c7;
 }
 
 header div {
@@ -60,11 +89,10 @@ header div {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1200px;
 }
 
 header div .logo_header {
-  height: 50px;
+  height: 26px;
   margin: 0 15px;
 }
 
@@ -82,10 +110,10 @@ header div #header-links a {
   color: black;
   text-decoration: none;
   margin: 0 16px;
-  padding: 32px 0;
+  padding: 17px 0;
   font-size: 1em;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,31 +132,33 @@ header div #header-links a {
 }
 
 header div #header-links :hover {
-  padding: 28px 0;
-  border-bottom: #970E1A 4px solid;
+  padding: 13px 0;
+  border-bottom: #0400f5 4px solid;
   border-top: white 4px solid;
+  color: #0400f5;
 }
 
-header div #search {
-  position: absolute;
-  top: 0;
-  right: calc((100vw - 1200px) * .5);
-  height: 22px;
-  width: 22px;
-  padding: 30px;
-  margin: 0;
+header div #design-brief {
+  border-left: 1px solid #c7c7c7;
+  padding: 17px;
+  width: 140px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1;
+  font-style: italic;
 }
 
-header div #search:hover {
-  background-color: rgba(149, 13, 25, 0.3);
-  cursor: pointer;
+header div #design-brief:hover {
+  background-color: rgba(4, 0, 245, 0.15);
 }
 
 .lander {
-  margin-top: 80px;
-  background-image: url("../img/home-slides/1.jpg");
-  background-size: cover;
-  height: 600px;
+  margin-top: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  height: 540px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,22 +172,40 @@ header div #search:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 0;
 }
 
 .lander .text {
   color: white;
   padding: 80px;
-  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
 }
 
 .lander .text .t {
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 9em;
+  font-weight: 300;
 }
 
 .lander .text .p {
-  font-size: 4em;
+  font-size: 1.1em;
   font-weight: 400;
+  width: 600px;
+  margin-bottom: 36px;
+}
+
+.lander .text .p b {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.landerbg {
+  top: 50px;
+  background-image: url("../img/image1.jfif");
+  background-size: cover;
+  background-position: right center;
+  height: 540px;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
 }
 
 .content {
@@ -192,7 +240,7 @@ header div #search:hover {
 
 .content .section .i {
   font-size: 2em;
-  color: #970E1A;
+  color: #0400f5;
   font-weight: 700;
   padding-bottom: 0px;
   border-bottom: none;
@@ -212,15 +260,15 @@ header div #search:hover {
 }
 
 .content .section a {
-  color: #970E1A;
+  color: #0400f5;
   background-color: none;
   padding: 12px 24px;
   text-decoration: none;
-  border: 3px solid #970E1A;
+  border: 3px solid #0400f5;
 }
 
 .content .section a:hover {
-  background-color: #970E1A;
+  background-color: #0400f5;
   color: white;
 }
 
