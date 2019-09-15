@@ -231,7 +231,7 @@ header div #search:hover {
 }
 
 .content #section2 {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -399,7 +399,7 @@ footer .col2 .sec2 div .t {
 
 footer .col2 .sec2 div li {
   list-style: none;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 footer .col2 .sec2 div li a {
