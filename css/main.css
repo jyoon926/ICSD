@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden;
-  background-color: #ebeae9;
+  background-color: #fbc7d4;
 }
 
 * {
@@ -11,13 +11,13 @@ html {
 }
 
 ::-moz-selection {
-  background: #232323;
-  color: #ebeae9;
+  background: black;
+  color: #fbc7d4;
 }
 
 ::selection {
-  background: #232323;
-  color: #ebeae9;
+  background: black;
+  color: #fbc7d4;
 }
 
 .transition {
@@ -38,15 +38,17 @@ body {
 h2 {
   font-size: 5em;
   line-height: 1;
+  color: black;
 }
 
 p {
   font-size: 1em;
   line-height: 1.618;
+  color: black;
 }
 
 a {
-  color: #232323;
+  color: black;
   text-decoration: none;
 }
 
@@ -60,13 +62,13 @@ a {
   position: fixed !important;
   height: 50px;
   width: 50px;
-  border: 2px solid #232323;
+  border: 2px solid black;
   border-radius: 50%;
   pointer-events: none;
 }
 
 .button {
-  color: #232323;
+  color: black;
   font-size: 1.1em;
   text-decoration: none;
   display: -webkit-box;
@@ -80,7 +82,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 0;
-  border-bottom: 2px solid #232323;
+  border-bottom: 2px solid black;
   width: 132px;
 }
 
@@ -100,18 +102,30 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ebeae9;
-  border-left: 1px solid #232323;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
+  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  border-left: 1px solid black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #232323;
+  background: black;
+}
+
+#bg {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
+  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  z-index: -1;
 }
 
 header {
   position: fixed;
   height: 60px;
-  background-color: #ebeae9;
+  background-color: #fbc7d4;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +140,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #232323;
+  border-bottom: 1px solid black;
   z-index: 2;
 }
 
@@ -163,7 +177,7 @@ header div #header-links {
 }
 
 header div #header-links a {
-  color: #232323;
+  color: black;
   text-decoration: none;
   margin: 0 20px;
   padding: 22px 0;
@@ -183,23 +197,23 @@ header div #header-links a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: #ebeae9 0px solid;
-  border-top: #ebeae9 0px solid;
+  border-bottom: #fbc7d4 0px solid;
+  border-top: #fbc7d4 0px solid;
 }
 
 header div #header-links :hover {
   padding: 18px 0;
-  border-bottom: #232323 4px solid;
-  border-top: #ebeae9 4px solid;
-  color: #232323;
+  border-bottom: black 4px solid;
+  border-top: #fbc7d4 4px solid;
+  color: black;
 }
 
 header div #design-brief {
-  border-left: 1px solid #232323;
+  border-left: 1px solid black;
   padding: 22px;
   width: 140px;
   text-align: center;
-  color: #232323;
+  color: black;
   text-decoration: none;
   font-size: 1em;
   line-height: 1;
@@ -207,11 +221,10 @@ header div #design-brief {
 }
 
 header div #design-brief:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .lander {
-  background-color: #ebeae9;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,11 +240,11 @@ header div #design-brief:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   z-index: 0;
-  border-bottom: 1px solid #232323;
+  border-bottom: 1px solid black;
 }
 
 .lander .text {
-  color: #232323;
+  color: black;
   padding: 80px;
 }
 
@@ -259,7 +272,7 @@ header div #design-brief:hover {
 
 hr {
   width: 100vw;
-  border-bottom: 1px solid #232323;
+  border-bottom: 1px solid black;
   border-top: none;
   position: relative;
   left: -10vw;
@@ -284,8 +297,8 @@ section {
   font-style: italic;
   padding: 0 12px 0 10px;
   margin-right: 6px;
-  background: #232323;
-  color: #ebeae9;
+  background: black;
+  color: #fbc7d4;
 }
 
 #donate P a:hover {
@@ -322,9 +335,8 @@ section {
 
 .bottom {
   width: 100vw;
-  color: #ebeae9;
+  color: black;
   padding: 14px;
   text-align: center;
-  background-color: #232323;
 }
 /*# sourceMappingURL=main.css.map */

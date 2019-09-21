@@ -1,5 +1,6 @@
-$light: #ebeae9;
-$dark: #232323;
+$light: #fbc7d4;
+$mid: #9796f0;
+$dark: black;
 
 html {
     scroll-behavior: smooth;
@@ -36,10 +37,12 @@ body {
 h2 {
     font-size: 5em;
     line-height: 1;
+    color: $dark;
 }
 p {
     font-size: 1em;
     line-height: 1.618;
+    color: $dark;
 }
 a {
     color: $dark;
@@ -83,8 +86,18 @@ a {
 }
 
 ::-webkit-scrollbar { width: 12px; }
-::-webkit-scrollbar-track { background: $light; border-left: 1px solid $dark; }
+::-webkit-scrollbar-track { background: linear-gradient(to bottom, $light,$mid); border-left: 1px solid $dark; }
 ::-webkit-scrollbar-thumb { background: $dark; }
+
+#bg {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: linear-gradient(to bottom, $light, $mid);
+    z-index: -1;
+}
 
 header {
     position: fixed;
@@ -148,14 +161,13 @@ header {
             font-style: italic;
 
             &:hover {
-                background: rgba(0, 0, 0, 0.2);
+                background: rgba(0, 0, 0, 0.15);
             }
         }
     }
 }
 
 .lander {
-    background-color: $light;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -243,8 +255,7 @@ section {
 
 .bottom {
     width: 100vw;
-    color: $light;
+    color: $dark;
     padding: 14px;
     text-align: center;
-    background-color: $dark;
 }
