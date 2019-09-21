@@ -1,6 +1,4 @@
-$light: #fbc7d4;
-$mid: #9796f0;
-$dark: black;
+@import "master";
 
 html {
     width: 100%;
@@ -98,163 +96,97 @@ a {
     z-index: -1;
 }
 
-header {
-    position: fixed;
-    height: 60px;
-    background-color: $light;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $dark;
-    z-index: 2;
+@media screen and (min-width: 1050px) {
+    .lander {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        z-index: 0;
+        border-bottom: 1px solid $dark;
 
-    div {
+        .text {
+            color: $dark;
+            padding: 80px;
+
+            .t {
+                font-size: 22vw;
+                font-weight: 700;
+                line-height: 1;
+            }
+            .p {
+                font-size: 1em;
+                width: 600px;
+                margin-bottom: 36px;
+                b {
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    hr {
+        width: 100vw;
+        border-bottom: 1px solid $dark;
+        border-top: none;
+        position: relative;
+        left: -10vw;
+    }
+    section {
+        margin: 80px 0;
+    }
+    #donate {
+        margin: 30px 0;
+        P {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0 auto;
+            line-height: 1.4;
+            a {
+                font-style: italic;
+                padding: 0 12px 0 10px;
+                margin-right: 6px;
+                background: $dark;
+                color: $light;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    #whatistsa {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
+        .part1 {
+            width: calc(50% - 70px);
+            margin-right: 70px;
 
-        .logo_header {
-            height: 26px;
-            margin: 0 18px;
-        }
-
-        #header-links {
-            display: flex;
-            flex-direction: row;
-
-            a {
-                color: $dark;
-                text-decoration: none;
-                margin: 0 20px;
-                padding: 22px 0;
-                font-size: 1em;
-                line-height: 1;
-                font-weight: 400;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-bottom: $light 0px solid;
-                border-top: $light 0px solid;
+            h2 {
+                margin-bottom: 30px;
             }
-            :hover {
-                padding: 18px 0;
-                border-bottom: $dark 4px solid;
-                border-top: $light 4px solid;
-                color: $dark;
+            p {
+                margin-bottom: 22px;
             }
         }
-        #design-brief {
-            border-left: 1px solid $dark;
-            padding: 22px;
-            width: 140px;
-            text-align: center;
-            color: $dark;
-            text-decoration: none;
-            font-size: 1em;
-            line-height: 1;
-            font-style: italic;
-
-            &:hover {
-                background: rgba(0, 0, 0, 0.15);
+        .part2 {
+            p {
+                font-size: 3em;
+                line-height: 1.2;
             }
         }
     }
-}
 
-.lander {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    z-index: 0;
-    border-bottom: 1px solid $dark;
-
-    .text {
+    .bottom {
+        width: 100vw;
         color: $dark;
-        padding: 80px;
-
-        .t {
-            font-size: 22vw;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .p {
-            font-size: 1em;
-            width: 600px;
-            margin-bottom: 36px;
-            b {
-                font-size: 1em;
-                font-weight: 600;
-            }
-        }
-    }
-}
-
-.content {
-    width: 80vw;
-    margin: 0 auto;
-}
-
-hr {
-    width: 100vw;
-    border-bottom: 1px solid $dark;
-    border-top: none;
-    position: relative;
-    left: -10vw;
-}
-section {
-    margin: 80px 0;
-}
-#donate {
-    margin: 30px 0;
-    P {
+        padding: 14px;
         text-align: center;
-        font-size: 1.5em;
-        margin: 0 auto;
-        line-height: 1.4;
-        a {
-            font-style: italic;
-            padding: 0 12px 0 10px;
-            margin-right: 6px;
-            background: $dark;
-            color: $light;
-            &:hover {
-                opacity: .8;
-            }
-        }
     }
-}
-#whatistsa {
-    display: flex;
-    flex-direction: row;
-    .part1 {
-        width: calc(50% - 70px);
-        margin-right: 70px;
-
-        h2 {
-            margin-bottom: 30px;
-        }
-        p {
-            margin-bottom: 22px;
-        }
-    }
-    .part2 {
-        p {
-            font-size: 3em;
-            line-height: 1.2;
-        }
-    }
-}
-
-.bottom {
-    width: 100vw;
-    color: $dark;
-    padding: 14px;
-    text-align: center;
 }

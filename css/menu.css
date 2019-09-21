@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1050px) {
+  header {
+    position: fixed;
+    height: 60px;
+    background-color: #fbc7d4;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid black;
+    z-index: 2;
+  }
+  header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header div .logo_header {
+    height: 26px;
+    margin: 0 18px;
+  }
+  header div #header-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header div #header-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 22px 0;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: #fbc7d4 0px solid;
+    border-top: #fbc7d4 0px solid;
+  }
+  header div #header-links :hover {
+    padding: 18px 0;
+    border-bottom: black 4px solid;
+    border-top: #fbc7d4 4px solid;
+    color: black;
+  }
+  header div #design-brief {
+    border-left: 1px solid black;
+    padding: 22px;
+    width: 140px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1;
+    font-style: italic;
+  }
+  header div #design-brief:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  header {
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    background-color: #9796f0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid black;
+    z-index: 2;
+  }
+  header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header div .logo_header {
+    height: 26px;
+    margin: 0 18px;
+  }
+  header div #header-links a {
+    display: none;
+  }
+  header div #design-brief {
+    display: none;
+  }
+  .bottom {
+    margin-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

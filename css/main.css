@@ -1,4 +1,8 @@
 html {
+  scroll-behavior: smooth;
+}
+
+html {
   width: 100%;
   overflow-x: hidden;
   background-color: #fbc7d4;
@@ -121,221 +125,104 @@ a {
   z-index: -1;
 }
 
-header {
-  position: fixed;
-  height: 60px;
-  background-color: #fbc7d4;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid black;
-  z-index: 2;
-}
-
-header div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-header div .logo_header {
-  height: 26px;
-  margin: 0 18px;
-}
-
-header div #header-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header div #header-links a {
-  color: black;
-  text-decoration: none;
-  margin: 0 20px;
-  padding: 22px 0;
-  font-size: 1em;
-  line-height: 1;
-  font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: #fbc7d4 0px solid;
-  border-top: #fbc7d4 0px solid;
-}
-
-header div #header-links :hover {
-  padding: 18px 0;
-  border-bottom: black 4px solid;
-  border-top: #fbc7d4 4px solid;
-  color: black;
-}
-
-header div #design-brief {
-  border-left: 1px solid black;
-  padding: 22px;
-  width: 140px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  font-size: 1em;
-  line-height: 1;
-  font-style: italic;
-}
-
-header div #design-brief:hover {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-.lander {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  z-index: 0;
-  border-bottom: 1px solid black;
-}
-
-.lander .text {
-  color: black;
-  padding: 80px;
-}
-
-.lander .text .t {
-  font-size: 22vw;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.lander .text .p {
-  font-size: 1em;
-  width: 600px;
-  margin-bottom: 36px;
-}
-
-.lander .text .p b {
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.content {
-  width: 80vw;
-  margin: 0 auto;
-}
-
-hr {
-  width: 100vw;
-  border-bottom: 1px solid black;
-  border-top: none;
-  position: relative;
-  left: -10vw;
-}
-
-section {
-  margin: 80px 0;
-}
-
-#donate {
-  margin: 30px 0;
-}
-
-#donate P {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 0 auto;
-  line-height: 1.4;
-}
-
-#donate P a {
-  font-style: italic;
-  padding: 0 12px 0 10px;
-  margin-right: 6px;
-  background: black;
-  color: #fbc7d4;
-}
-
-#donate P a:hover {
-  opacity: .8;
-}
-
-#whatistsa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-#whatistsa .part1 {
-  width: calc(50% - 70px);
-  margin-right: 70px;
-}
-
-#whatistsa .part1 h2 {
-  margin-bottom: 30px;
-}
-
-#whatistsa .part1 p {
-  margin-bottom: 22px;
-}
-
-#whatistsa .part2 p {
-  font-size: 3em;
-  line-height: 1.2;
-}
-
-.bottom {
-  width: 100vw;
-  color: black;
-  padding: 14px;
-  text-align: center;
+@media screen and (min-width: 1050px) {
+  .lander {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 0;
+    border-bottom: 1px solid black;
+  }
+  .lander .text {
+    color: black;
+    padding: 80px;
+  }
+  .lander .text .t {
+    font-size: 22vw;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .lander .text .p {
+    font-size: 1em;
+    width: 600px;
+    margin-bottom: 36px;
+  }
+  .lander .text .p b {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .content {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  hr {
+    width: 100vw;
+    border-bottom: 1px solid black;
+    border-top: none;
+    position: relative;
+    left: -10vw;
+  }
+  section {
+    margin: 80px 0;
+  }
+  #donate {
+    margin: 30px 0;
+  }
+  #donate P {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+  #donate P a {
+    font-style: italic;
+    padding: 0 12px 0 10px;
+    margin-right: 6px;
+    background: black;
+    color: #fbc7d4;
+  }
+  #donate P a:hover {
+    opacity: .8;
+  }
+  #whatistsa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #whatistsa .part1 {
+    width: calc(50% - 70px);
+    margin-right: 70px;
+  }
+  #whatistsa .part1 h2 {
+    margin-bottom: 30px;
+  }
+  #whatistsa .part1 p {
+    margin-bottom: 22px;
+  }
+  #whatistsa .part2 p {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  .bottom {
+    width: 100vw;
+    color: black;
+    padding: 14px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

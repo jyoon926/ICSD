@@ -1,0 +1,109 @@
+@import "master";
+
+@media screen and (max-width: 1050px) {
+    .lander {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        border-bottom: 1px solid $dark;
+
+        .text {
+            color: $dark;
+            padding: 90px 5vw;
+
+            .t {
+                font-size: 26vw;
+                font-weight: 700;
+                line-height: 1;
+                text-align: center;
+                padding: 0 0 20px 0;
+            }
+            .p {
+                text-align: center;
+                font-size: 1em;
+                width: 90vw;
+                max-width: 600px;
+                margin: 0 auto;
+                margin-bottom: 36px;
+                b {
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+            a {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .content {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    hr {
+        width: 100vw;
+        border-bottom: 1px solid $dark;
+        border-top: none;
+        position: relative;
+        left: -5vw;
+    }
+    section {
+        margin: 80px 0;
+    }
+    #donate {
+        margin: 30px 0;
+        P {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0 auto;
+            line-height: 1.4;
+            a {
+                font-style: italic;
+                padding: 0 12px 0 10px;
+                margin-right: 6px;
+                background: $dark;
+                color: $light;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    #whatistsa {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .part1 {
+            margin-bottom: 40px;
+            h2 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 22px;
+                max-width: 600px;
+            }
+            a {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .part2 {
+            p {
+                font-size: 3em;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .bottom {
+        width: 100vw;
+        color: $dark;
+        padding: 14px;
+        text-align: center;
+    }
+}
