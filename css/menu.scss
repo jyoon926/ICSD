@@ -78,7 +78,7 @@
 @media screen and (max-width: 1050px) {
     header {
         position: fixed;
-        height: 60px;
+        height: 50px;
         top: 0;
         background-color: $light;
         width: 100%;
@@ -115,7 +115,7 @@
                 z-index: 5;
                 opacity: 1;
                 transition-duration: .6s;
-                transition-timing-function: ease-in-out;
+                transition-timing-function: cubic-bezier(.64,0,.31,1);
                 border-left: 1px solid $dark;
         
                 a {
@@ -142,13 +142,15 @@
         z-index: 10;
         top: 0;
         right: 0;
-        height: 60px;
+        height: 50px;
         border-left: 1px solid $dark;
         border-bottom: 1px solid $dark;
+        background: $light; 
+
         img {
-            height: 30px;
-            width: 30px;
-            padding: 15px;
+            height: 26px;
+            width: 26px;
+            padding: 12px;
         }
     }
     #checkbox {
@@ -159,8 +161,7 @@
         opacity: 1;
         right: 0;
     }
-    .checkbox:checked ~ .menuButton {
-        position: fixed;
-        z-index: 101;
+    .checkbox:checked ~ .menu-icon {
+        box-shadow: 2px 7px 15px -5px rgba(0,0,0,0.6);
     }
 }

@@ -109,7 +109,7 @@ html {
 @media screen and (max-width: 1050px) {
   header {
     position: fixed;
-    height: 60px;
+    height: 50px;
     top: 0;
     background-color: #fbc7d4;
     width: 100%;
@@ -174,8 +174,8 @@ html {
     opacity: 1;
     -webkit-transition-duration: .6s;
             transition-duration: .6s;
-    -webkit-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
+            transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
     border-left: 1px solid black;
   }
   header div #header-links a {
@@ -205,14 +205,15 @@ html {
     z-index: 10;
     top: 0;
     right: 0;
-    height: 60px;
+    height: 50px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background: #fbc7d4;
   }
   .menu-icon img {
-    height: 30px;
-    width: 30px;
-    padding: 15px;
+    height: 26px;
+    width: 26px;
+    padding: 12px;
   }
   #checkbox {
     position: fixed;
@@ -222,9 +223,9 @@ html {
     opacity: 1;
     right: 0;
   }
-  .checkbox:checked ~ .menuButton {
-    position: fixed;
-    z-index: 101;
+  .checkbox:checked ~ .menu-icon {
+    -webkit-box-shadow: 2px 7px 15px -5px rgba(0, 0, 0, 0.6);
+            box-shadow: 2px 7px 15px -5px rgba(0, 0, 0, 0.6);
   }
 }
 /*# sourceMappingURL=menu.css.map */
