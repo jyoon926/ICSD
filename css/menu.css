@@ -87,7 +87,11 @@ html {
     border-top: #fbc7d4 4px solid;
     color: black;
   }
-  header div #design-brief {
+  header div #contact-input {
+    position: absolute;
+    top: -20px;
+  }
+  header div #contact-button {
     border-left: 1px solid black;
     padding: 22px;
     width: 140px;
@@ -98,10 +102,100 @@ html {
     line-height: 1;
     font-style: italic;
   }
-  header div #design-brief:hover {
+  header div #contact-button:hover {
+    background: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  header div #contact {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(100% - 160px);
+    width: calc(100% - 160px);
+    top: 80px;
+    left: 80px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
+    background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+    border: 1px solid black;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition-duration: .6s;
+            transition-duration: .6s;
+    -webkit-transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
+            transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
+  }
+  header div #contact h2 {
+    font-size: 2em;
+    font-style: italic;
+    line-height: 2;
+  }
+  header div #contact h1 {
+    font-size: 8vw;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  header div #contact .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header div #contact .buttons a {
+    padding: 14px 24px;
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+  header div #contact .buttons a:hover {
     background: rgba(0, 0, 0, 0.15);
   }
+  header div #contact .buttons a:last-child {
+    margin: 0;
+  }
+  header div #contact #exit {
+    position: fixed;
+    top: -1px;
+    right: -1px;
+    padding: 30px;
+    border: 1px solid black;
+  }
+  header div #contact #exit img {
+    height: 40px;
+    width: 40px;
+  }
+  header div #contact #exit:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  header div #contact-input:checked ~ #contact {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .menu-icon {
+    display: none;
+  }
+  #checkbox {
     display: none;
   }
 }
@@ -200,6 +294,15 @@ html {
   header div #design-brief {
     display: none;
   }
+  header div #contact-input {
+    display: none;
+  }
+  header div #contact-button {
+    display: none;
+  }
+  header div #contact {
+    display: none;
+  }
   .menu-icon {
     position: fixed;
     z-index: 10;
@@ -222,10 +325,6 @@ html {
   .checkbox:checked ~ #header-links {
     opacity: 1;
     right: 0;
-  }
-  .checkbox:checked ~ .menu-icon {
-    -webkit-box-shadow: 2px 7px 15px -5px rgba(0, 0, 0, 0.6);
-            box-shadow: 2px 7px 15px -5px rgba(0, 0, 0, 0.6);
   }
 }
 /*# sourceMappingURL=menu.css.map */

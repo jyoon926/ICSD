@@ -84,7 +84,8 @@ a {
 
 ::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { background: linear-gradient(to bottom, $light,$mid); border-left: 1px solid $dark; }
-::-webkit-scrollbar-thumb { background: $dark; }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); border-top: 1px solid $dark; border-bottom: 1px solid $dark; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 1); }
 
 #bg {
     position: fixed;
