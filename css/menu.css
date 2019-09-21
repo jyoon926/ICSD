@@ -166,17 +166,17 @@ html {
             align-items: center;
     background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
     background: linear-gradient(to bottom, #fbc7d4, #9796f0);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
-    left: -101vw;
+    right: -101vw;
     z-index: 5;
     opacity: 1;
     -webkit-transition-duration: .6s;
             transition-duration: .6s;
     -webkit-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
-    border-right: 1px solid black;
+    border-left: 1px solid black;
   }
   header div #header-links a {
     font-size: 2em;
@@ -220,7 +220,7 @@ html {
   }
   .checkbox:checked ~ #header-links {
     opacity: 1;
-    left: 0;
+    right: 0;
   }
   .checkbox:checked ~ .menuButton {
     position: fixed;

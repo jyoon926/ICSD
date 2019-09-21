@@ -108,15 +108,15 @@
                 justify-content: center;
                 align-items: center;
                 background: linear-gradient(to bottom, $light,$mid);
-                height: 100vh;
+                height: 100%;
                 width: 100%;
                 top: 0;
-                left: -101vw;
+                right: -101vw;
                 z-index: 5;
                 opacity: 1;
                 transition-duration: .6s;
                 transition-timing-function: ease-in-out;
-                border-right: 1px solid $dark;
+                border-left: 1px solid $dark;
         
                 a {
                     font-size: 2em;
@@ -157,7 +157,7 @@
     }
     .checkbox:checked ~ #header-links {
         opacity: 1;
-        left: 0;
+        right: 0;
     }
     .checkbox:checked ~ .menuButton {
         position: fixed;
