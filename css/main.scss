@@ -1,15 +1,21 @@
-$primary: rgba(4, 0, 245, 1);
-$darker: rgba(8, 0, 158, 1);
+$light: #ebeae9;
+$dark: #232323;
 
 html {
     scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
+    background-color: $light;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+::selection {
+    background: $dark;
+    color: $light;
 }
 
 .transition {
@@ -20,22 +26,50 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
-    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
+h2 {
+    font-size: 5em;
+    line-height: 1;
+}
+p {
+    font-size: 1em;
+    line-height: 1.618;
+}
+a {
+    color: $dark;
+    text-decoration: none;
+}
+
+#cursor {
+    top: -100px;
+    z-index: 10000;
+    -webkit-transition-duration: .6s;
+            transition-duration: .6s;
+    transition-timing-function: cubic-bezier(0,0,.25,1);
+    position: fixed !important;
+    height: 50px;
+    width: 50px;
+    border: 2px solid $dark;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
 .button {
-    color: white;
+    color: $dark;
     font-size: 1.1em;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 0;
-    border-bottom: 2px solid white;
-    width: 124px;
+    border-bottom: 2px solid $dark;
+    width: 132px;
 
     img {
         height: 15px;
@@ -43,21 +77,25 @@ body {
         margin-left: 10px;
     }
     &:hover {
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(0, 0, 0, 0.2);
         padding: 12px 30px;
     }
 }
 
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: $light; border-left: 1px solid $dark; }
+::-webkit-scrollbar-thumb { background: $dark; }
+
 header {
     position: fixed;
-    height: 50px;
-    background-color: white;
+    height: 60px;
+    background-color: $light;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid $dark;
 
     div {
         display: flex;
@@ -68,7 +106,7 @@ header {
 
         .logo_header {
             height: 26px;
-            margin: 0 15px;
+            margin: 0 18px;
         }
 
         #header-links {
@@ -76,10 +114,10 @@ header {
             flex-direction: row;
 
             a {
-                color: black;
+                color: $dark;
                 text-decoration: none;
-                margin: 0 16px;
-                padding: 17px 0;
+                margin: 0 20px;
+                padding: 22px 0;
                 font-size: 1em;
                 line-height: 1;
                 font-weight: 400;
@@ -87,261 +125,119 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-bottom: white 0px solid;
-                border-top: white 0px solid;
+                border-bottom: $light 0px solid;
+                border-top: $light 0px solid;
             }
             :hover {
-                padding: 13px 0;
-                border-bottom: $primary 4px solid;
-                border-top: white 4px solid;
-                color: $primary;
+                padding: 18px 0;
+                border-bottom: $dark 4px solid;
+                border-top: $light 4px solid;
+                color: $dark;
             }
         }
         #design-brief {
-            border-left: 1px solid #c7c7c7;
-            padding: 17px;
+            border-left: 1px solid $dark;
+            padding: 22px;
             width: 140px;
             text-align: center;
-            color: black;
+            color: $dark;
             text-decoration: none;
             font-size: 1em;
             line-height: 1;
             font-style: italic;
 
             &:hover {
-                background-color: rgba(4, 0, 245, .15);
+                background: rgba(0, 0, 0, 0.2);
             }
         }
     }
 }
 
 .lander {
-    margin-top: 50px;
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
-    height: 540px;
+    background-color: $light;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     z-index: 0;
+    border-bottom: 1px solid $dark;
 
     .text {
-        color: white;
+        color: $dark;
         padding: 80px;
-        //text-shadow: 5px 5px 20px rgba(0,0,0,0.7);
 
         .t {
-            font-size: 9em;
-            font-weight: 300;
+            font-size: 22vw;
+            font-weight: 700;
+            line-height: 1;
         }
         .p {
-            font-size: 1.1em;
-            font-weight: 400;
+            font-size: 1em;
+            font-weight: 300;
             width: 600px;
             margin-bottom: 36px;
             b {
-                font-size: 1.1em;
-                font-weight: 700;
+                font-size: 1em;
+                font-weight: 600;
             }
         }
     }
-}
-.landerbg {
-    top: 50px;
-    background-image: url('../img/image1.jfif');
-    background-size: cover;
-    background-position: right center;
-    height: 540px;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
 }
 
 .content {
-    width: 100%;
+    width: 80vw;
+    margin: 0 auto;
+}
 
-    .section {
-        padding: 60px calc((100vw - 1200px) * .5) 84px calc((100vw - 1200px) * .5);
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-
-        .t {
-            font-size: 1.5em;
-            font-weight: 400;
-            margin-bottom: 10px;
-        }
-        .p {
-            margin-bottom: 16px;
-            padding-bottom: 16px;
-            border-bottom: 2px solid rgba(0,0,0,0.5);
-        }
-        .i {
-            font-size: 2em;
-            color: $primary;
+hr {
+    width: 100vw;
+    border-bottom: 1px solid $dark;
+    position: relative;
+    left: -10vw;
+}
+section {
+    margin: 80px 0;
+}
+#donate {
+    margin: 30px 0;
+    P {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0 auto;
+        line-height: 1.15;
+        a {
             font-weight: 700;
-            padding-bottom: 0px;
-            border-bottom: none;
-        }
-        .u {
-            opacity: .7;
-            font-style: italic;
-            padding: 6px 0;
-            border-bottom: none;
-        }
-        .l {
-            margin-bottom: 40px;
-            padding-bottom: 0px;
-            border-bottom: none;
-        }
-        a {
-            color: $primary;
-            background-color: none;
-            padding: 12px 24px;
-            text-decoration: none;
-            border: 3px solid $primary;
-        }
-        a:hover {
-            background-color: $primary;
-            color: white;
-        }
-        img {
-            width: 28vw;
-            margin-right: 40px;
-            border-radius: 14px;
-        }
-    }
-
-    #section2 {
-        background: rgba(0,0,0,0.1);
-        align-items: center;
-        justify-content: center;
-        
-        .p {
-            margin-bottom: 16px;
-            padding-bottom: 30px;
-            border-bottom: 0px solid rgba(0,0,0,0.5);
-            width: 400px;
-            text-align: center;
-        }
-        .i {
-            padding-bottom: 4px;
-        }
-        a {
-            margin: 0 132.775px;
         }
     }
 }
-
-footer {
+#whatistsa {
     display: flex;
-    flex-direction: column;
-    width: 100vw;
+    flex-direction: row;
+    .part1 {
+        width: calc(50% - 70px);
+        margin-right: 70px;
 
-    .col1 {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 300px;
-        text-align: center;
-
-        .p {
-            color: white;
-            font-size: 1.5em;
-            font-weight: 300;
-            width: 70%;
+        h2 {
+            margin-bottom: 30px;
         }
-        .t {
-            color: white;
-            font-size: 3em;
-            font-weight: 400;
-            width: 70%;
-        }
-        .sec1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 50vw;
-            background-image: url('../img/button_culture.jpg');
-            background-size: cover;
-            text-decoration: none;
-        }
-        .sec2 {
-            width: 50vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-image: url('../img/button_talk.jpg');
-            background-size: cover;
-            text-decoration: none;
+        p {
+            margin-bottom: 22px;
         }
     }
-    .col2 {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 400px;
-
-        .sec1 {
-            width: 40vw;
-            background-image: url('../img/footer_image.jpg');
-            background-size: cover;
-            background-position: center center;
-        }
-        .sec2 {
-            width: 60vw;
-            background-color: rgba(0,0,0,0.85);
-            display: flex;
-            flex-direction: row;
-            padding: 30px 80px;
-
-            .a {
-                margin-right: 80px;
-            }
-            .c {
-                margin-left: 80px;
-                justify-content: center;
-            }
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                .t {
-                    color: white;
-                    font-size: 2em;
-                    font-weight: 600;
-                    padding-bottom: 8px;
-                }
-                li {
-                    list-style: none;
-                    padding-bottom: 2px;
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-weight: 300;
-                    }
-                }
-                img {
-                    height: 102.25px;
-                    width: 250px;
-                    margin-bottom: 20px;
-                }
-                p {
-                    color: white;
-                    font-weight: 300;
-                }
-            }
+    .part2 {
+        p {
+            font-size: 3em;
+            line-height: 1.15;
         }
     }
 }
 
 .bottom {
     width: 100vw;
-    color: white;
+    color: $light;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0,0,0,0.9);
+    background-color: $dark;
     font-weight: 300;
 }

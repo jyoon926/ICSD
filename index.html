@@ -1,7 +1,6 @@
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <title>Ithaca High School TSA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +8,19 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <div id="cursor" onload="everyTick()"></div>
         <header>
             <div>
-                <a href="index.html"><img src="img/logo_header.svg" alt="" class="logo_header"></a>
+                <a href="index.html" onmouseover="hover()" onmouseout="hoverOut()"><img src="img/logo_header.svg" alt="" class="logo_header"></a>
                 <div id="header-links">
-                    <a href="#" class="transition">Submissions</a>
-                    <a href="#" class="transition">Fundraising</a>
-                    <a href="#" class="transition">Courses</a>
-                    <a href="#" class="transition">Officers</a>
-                    <a href="#" class="transition">Advisors</a>
-                    <a href="#" class="transition">Works Cited</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Submissions</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Fundraising</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Courses</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Officers</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Advisors</a>
+                    <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Works Cited</a>
                 </div>
-                <a href="#" id="design-brief" class="transition">Design Brief</a>
+                <a href="#" id="design-brief" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Design Brief</a>
             </div>
         </header>
 
@@ -28,90 +28,35 @@
             <div class="text">
                 <p class="t">IHSTSA</p>
                 <p class="p"><b>Ithaca High School Technology Student Association</b> is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
-                <a href="#whatistsa" class="button transition">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
+                <a href="#whatistsa" class="button transition" onmouseover="hover()" onmouseout="hoverOut()">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
             </div>
         </div>
-        <div class="landerbg"></div>
 
         <div class="content">
-            <div class="section" id="whatistsa">
-                <div class="part">
-                    <p class="t">What is TSA?</p>
-                    <div class="text">
-                        <p class="p">Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
-                        <p class="p u">OTHER NEWS</p>
-                        <p class="p">Notice of Public Hearings on the District-Wide School Safety Plan and District Code of Conduct</p>
-                        <p class="p">Proposed Imposition of a Sales Tax on Utilities</p>
-                        <p class="p l">US Lacrosse All-American</p>
-                        <a href="#" class="transition">All News</a>
-                    </div>
+
+            <section id="donate">
+                <p><a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E130565&id=41" target="none">Donate to IHSTSA!</a> Help us send as many of our bright and passionate team members as we can to the conferences.</p>
+            </section>
+            <hr>
+            <section class="section1" id="whatistsa">
+                <div class="part1">
+                    <h2>What is TSA?</h2>
+                    <p>Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
+                    <a href="https://tsaweb.org/" class="button transition" onmouseover="hover()" onmouseout="hoverOut()" target="none">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
                 </div>
-            </div>
-            <!--<div class="section" id="section2">
-                <div class="part">
-                    <div class="text">
-                        <p class="p i">Engage. Educate. Empower.</p>
-                        <p class="p">Explore Engaged, Empowered Learning, the projects you see in this collection of amazing work represent our vision and mission come to life through audacious innovation designed to meet the needs of 21st Century students.</p>
-                        <a href="#" class="transition">Learn More</a>
-                    </div>
+                <div class="part2">
+                    <p><b>250,000+</b> Students</p>
+                    <p><b>2,500+</b> Teachers</p>
+                    <p><b>2,000+</b> Schools</p>
+                    <p><b>48</b> State Delegations</p>
+                    <p><b>4</b> Countries</p>
                 </div>
-            </div>
+            </section>
         </div>
-        <footer>
-            <div class="col1">
-                <a href="https://www.icsdcultureoflove.com/" target="none" class="sec1">
-                    <p class="t">Culture of Love</p>
-                    <p class="p">See how we are cultivating a culture of love.</p>
-                </a>
-                <a href="#" class="sec2">
-                    <p class="t">Let's Talk</p>
-                    <p class="p">Share your ideas to improve Ithaca City Schools.</p>
-                </a>
-            </div>
-            <div class="col2">
-                <div class="sec1"></div>
-                <div class="sec2">
-                    <div class="a">
-                        <p class="t">Schools</p>
-                        <ul>
-                            <li><a href="#">High School</a></li>
-                            <li><a href="#">Dewitt Middle</a></li>
-                            <li><a href="#">Boynton Middle</a></li>
-                            <li><a href="#">Lehman Alternative</a></li>
-                            <li><a href="#">Belle Sherman</a></li>
-                            <li><a href="#">Beverly Martin</a></li>	
-                            <li><a href="#">Caroline</a></li>
-                            <li><a href="#">Cayuga Heights</a></li>
-                            <li><a href="#">Enfield</a></li>
-                            <li><a href="#">Fall Creek</a></li>
-                            <li><a href="#">Northeast</a></li>
-                            <li><a href="#">South Hill</a></li>
-                        </ul>
-                    </div>
-                    <div class="b">
-                        <p class="t">District Information</p>
-                        <ul>
-                            <li><a href="#">Administration</a></li>
-                            <li><a href="#">Business Services</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Communications</a></li>
-                            <li><a href="#">Emergency Info</a></li>
-                            <li><a href="#">Employment</a></li>	
-                            <li><a href="#">Let's Talk</a></li>
-                            <li><a href="#">Registration</a></li>
-                            <li><a href="#">Smart Schools NY</a></li>
-                            <li><a href="#">Vision & Mission</a></li>
-                            <li><a href="#">Water Testing</a></li>
-                        </ul>
-                    </div>
-                    <div class="c">
-                        <img src="img/logo_footer.png" alt="">
-                        <p>Dr. Luvelle Brown, Superintendent <br> 400 Lake Street | Ithaca, NY 14850 <br> (607) 274-2101</p>
-                    </div>
-                </div>
-            </div>
-        </footer>-->
-        </div>
+
         <div class="bottom">Designed and developed by Jacob Yoon</div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	    <script src="js/script.js"></script>
     </body>
 </html>
