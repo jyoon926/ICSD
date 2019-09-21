@@ -96,6 +96,7 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid $dark;
+    z-index: 2;
 
     div {
         display: flex;
@@ -174,7 +175,6 @@ header {
         }
         .p {
             font-size: 1em;
-            font-weight: 300;
             width: 600px;
             margin-bottom: 36px;
             b {
@@ -193,6 +193,7 @@ header {
 hr {
     width: 100vw;
     border-bottom: 1px solid $dark;
+    border-top: none;
     position: relative;
     left: -10vw;
 }
@@ -205,9 +206,16 @@ section {
         text-align: center;
         font-size: 1.5em;
         margin: 0 auto;
-        line-height: 1.15;
+        line-height: 1.4;
         a {
-            font-weight: 700;
+            font-style: italic;
+            padding: 0 12px 0 10px;
+            margin-right: 6px;
+            background: $dark;
+            color: $light;
+            &:hover {
+                opacity: .8;
+            }
         }
     }
 }
@@ -228,7 +236,7 @@ section {
     .part2 {
         p {
             font-size: 3em;
-            line-height: 1.15;
+            line-height: 1.2;
         }
     }
 }
@@ -236,8 +244,7 @@ section {
 .bottom {
     width: 100vw;
     color: $light;
-    padding: 10px;
+    padding: 14px;
     text-align: center;
     background-color: $dark;
-    font-weight: 300;
 }

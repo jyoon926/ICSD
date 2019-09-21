@@ -127,6 +127,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #232323;
+  z-index: 2;
 }
 
 header div {
@@ -242,7 +243,6 @@ header div #design-brief:hover {
 
 .lander .text .p {
   font-size: 1em;
-  font-weight: 300;
   width: 600px;
   margin-bottom: 36px;
 }
@@ -260,6 +260,7 @@ header div #design-brief:hover {
 hr {
   width: 100vw;
   border-bottom: 1px solid #232323;
+  border-top: none;
   position: relative;
   left: -10vw;
 }
@@ -276,11 +277,19 @@ section {
   text-align: center;
   font-size: 1.5em;
   margin: 0 auto;
-  line-height: 1.15;
+  line-height: 1.4;
 }
 
 #donate P a {
-  font-weight: 700;
+  font-style: italic;
+  padding: 0 12px 0 10px;
+  margin-right: 6px;
+  background: #232323;
+  color: #ebeae9;
+}
+
+#donate P a:hover {
+  opacity: .8;
 }
 
 #whatistsa {
@@ -308,15 +317,14 @@ section {
 
 #whatistsa .part2 p {
   font-size: 3em;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .bottom {
   width: 100vw;
   color: #ebeae9;
-  padding: 10px;
+  padding: 14px;
   text-align: center;
   background-color: #232323;
-  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
