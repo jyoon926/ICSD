@@ -5,7 +5,7 @@ html {
 html {
   width: 100%;
   overflow-x: hidden;
-  background-color: #fbc7d4;
+  background-color: #36D1DC;
 }
 
 * {
@@ -15,12 +15,12 @@ html {
 
 ::-moz-selection {
   background: black;
-  color: #fbc7d4;
+  color: #36D1DC;
 }
 
 ::selection {
   background: black;
-  color: #fbc7d4;
+  color: #36D1DC;
 }
 
 .transition {
@@ -105,8 +105,8 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
-  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#36D1DC), to(#5B86E5));
+  background: linear-gradient(to bottom, #36D1DC, #5B86E5);
   border-left: 1px solid black;
 }
 
@@ -126,8 +126,8 @@ a {
   left: 0;
   width: 100vw;
   height: calc(100vh - 60px);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fbc7d4), to(#9796f0));
-  background: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#36D1DC), to(#5B86E5));
+  background: linear-gradient(to bottom, #36D1DC, #5B86E5);
   z-index: -1;
 }
 
@@ -207,7 +207,7 @@ a {
     padding: 5px 12px 0 10px;
     margin-right: 6px;
     background: black;
-    color: #fbc7d4;
+    color: #36D1DC;
   }
   #donate P a:hover {
     opacity: .8;

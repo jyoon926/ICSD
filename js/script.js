@@ -7,5 +7,7 @@ $(document).ready(function(){
 			var top1 = $win.scrollTop()/4;
 			$bg.css('top', '' + top1 + 'px');
 		});
-    }
+	}
 });
+
+
