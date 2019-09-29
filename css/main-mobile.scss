@@ -107,6 +107,34 @@
             }
         }
     }
+    #activities {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .part1 {
+            margin-bottom: 40px;
+            h2 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 22px;
+                max-width: 600px;
+            }
+            a {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .part2 {
+            
+            img {
+                width: 100%;
+                filter: grayscale(.9) opacity(.8) contrast(1);
+                border: 1px solid $dark;
+            }
+        }
+    }
 
     .bottom {
         width: 100vw;

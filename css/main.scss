@@ -193,6 +193,29 @@ a {
             }
         }
     }
+    #activities {
+        display: flex;
+        flex-direction: row;
+        .part1 {
+            width: calc(50% + 70px);
+            margin-right: 70px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 22px;
+            }
+        }
+        .part2 {
+            width: calc(50% + 70px);
+            img {
+                width: 100%;
+                filter: grayscale(.9) opacity(.8) contrast(1);
+                border: 1px solid $dark;
+            }
+        }
+    }
 
     .bottom {
         width: 100vw;

@@ -82,7 +82,7 @@ html {
     padding: 5px 12px 0 10px;
     margin-right: 6px;
     background: black;
-    color: #fbc7d4;
+    color: #36D1DC;
   }
   #donate P a:hover {
     opacity: .8;
@@ -118,6 +118,39 @@ html {
     font-size: 2.5em;
     line-height: 1;
     padding-bottom: 10px;
+  }
+  #activities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #activities .part1 {
+    margin-bottom: 40px;
+  }
+  #activities .part1 h2 {
+    margin-bottom: 30px;
+  }
+  #activities .part1 p {
+    margin-bottom: 22px;
+    max-width: 600px;
+  }
+  #activities .part1 a {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #activities .part2 img {
+    width: 100%;
+    -webkit-filter: grayscale(0.9) opacity(0.8) contrast(1);
+            filter: grayscale(0.9) opacity(0.8) contrast(1);
+    border: 1px solid black;
   }
   .bottom {
     width: 100vw;

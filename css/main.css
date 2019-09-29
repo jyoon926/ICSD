@@ -235,6 +235,34 @@ a {
     font-size: 3em;
     line-height: 1.2;
   }
+  #activities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #activities .part1 {
+    width: calc(50% + 70px);
+    margin-right: 70px;
+  }
+  #activities .part1 h2 {
+    margin-bottom: 30px;
+  }
+  #activities .part1 p {
+    margin-bottom: 22px;
+  }
+  #activities .part2 {
+    width: calc(50% + 70px);
+  }
+  #activities .part2 img {
+    width: 100%;
+    -webkit-filter: grayscale(0.9) opacity(0.8) contrast(1);
+            filter: grayscale(0.9) opacity(0.8) contrast(1);
+    border: 1px solid black;
+  }
   .bottom {
     width: 100vw;
     color: black;
