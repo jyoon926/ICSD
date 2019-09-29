@@ -67,7 +67,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 0;
+    padding: 14px 0 12px 0;
     border-bottom: 2px solid $dark;
     width: 134px;
 
@@ -78,7 +78,7 @@ a {
     }
     &:hover {
         background: rgba(0, 0, 0, 0.2);
-        padding: 12px 30px;
+        padding: 14px 24px 12px 24px;
     }
 }
 
@@ -211,7 +211,7 @@ a {
             width: calc(50% + 70px);
             img {
                 width: 100%;
-                filter: grayscale(.9) opacity(.8) contrast(1);
+                filter: grayscale(1) opacity(.7) contrast(.9);
                 border: 1px solid $dark;
             }
         }

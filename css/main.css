@@ -84,7 +84,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 0;
+  padding: 14px 0 12px 0;
   border-bottom: 2px solid black;
   width: 134px;
 }
@@ -97,7 +97,7 @@ a {
 
 .button:hover {
   background: rgba(0, 0, 0, 0.2);
-  padding: 12px 30px;
+  padding: 14px 24px 12px 24px;
 }
 
 ::-webkit-scrollbar {
@@ -259,8 +259,8 @@ a {
   }
   #activities .part2 img {
     width: 100%;
-    -webkit-filter: grayscale(0.9) opacity(0.8) contrast(1);
-            filter: grayscale(0.9) opacity(0.8) contrast(1);
+    -webkit-filter: grayscale(1) opacity(0.7) contrast(0.9);
+            filter: grayscale(1) opacity(0.7) contrast(0.9);
     border: 1px solid black;
   }
   .bottom {
