@@ -34,6 +34,7 @@
         font-size: 7vw;
         font-weight: 400;
         grid-area: 1 / 1 / 1 / 4;
+        margin: 10px 0 0 0;
     }
     #landerimg {
         background-image: url('../img/marvin\ closeup.jpg');
@@ -64,6 +65,7 @@ hr {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+    color: $dark;
     a {
         color: white;
         background: $accent;
@@ -78,6 +80,7 @@ hr {
     flex-direction: row;
     padding: 80px;
     width: calc(100% - 160px);
+    color: $dark;
     .part1 {
         width: calc(50% - 70px);
         margin-right: 70px;
@@ -108,6 +111,7 @@ hr {
     .part1 {
         width: calc(50% - 70px);
         margin-right: 70px;
+        color: $dark;
 
         h2 {
             margin-bottom: 30px;

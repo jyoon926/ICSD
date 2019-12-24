@@ -73,6 +73,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 1 / 1 / 1 / 4;
+  margin: 10px 0 0 0;
 }
 
 .lander #landerimg {
@@ -124,6 +125,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   font-size: 22px;
+  color: #232423;
 }
 
 #donate a {
@@ -145,6 +147,7 @@ hr {
           flex-direction: row;
   padding: 80px;
   width: calc(100% - 160px);
+  color: #232423;
 }
 
 #whatistsa .part1 {
@@ -183,6 +186,7 @@ hr {
 #activities .part1 {
   width: calc(50% - 70px);
   margin-right: 70px;
+  color: #232423;
 }
 
 #activities .part1 h2 {
