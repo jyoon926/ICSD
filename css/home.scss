@@ -1,0 +1,139 @@
+@import 'styles';
+
+.button {
+    color: $dark;
+    font-size: 22px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 0 12px 0;
+    border-bottom: 2px solid $dark;
+    width: 150px;
+    img {
+        height: 15px;
+        width: 24px;
+        margin-left: 10px;
+    }
+    &:hover {
+        background: $accent;
+        padding: 14px 24px 12px 24px;
+    }
+}
+
+.lander {
+    color: $dark;
+    height: calc(100vh - 160px);
+    padding: 80px;
+    width: calc(100% - 160px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7vw auto;
+    grid-gap: 80px;
+    .t {
+        font-size: 7vw;
+        font-weight: 400;
+        grid-area: 1 / 1 / 1 / 4;
+    }
+    #landerimg {
+        background-image: url('../img/marvin\ closeup.jpg');
+        background-size: cover;
+        background-position: right;
+        grid-area: 2 / 1 / 2 / 3;
+        box-shadow: 18px 18px 0 $accent;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .p {
+            margin-bottom: 40px;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+    }
+}
+hr {
+    border: 1px solid $dark;
+    width: 100%;
+}
+#donate {
+    margin: 80px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    a {
+        color: white;
+        background: $accent;
+        padding: 6px 14px;
+        text-decoration: none;
+        margin-right: 10px;
+        font-style: italic;
+    }
+}
+#whatistsa {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    width: calc(100% - 160px);
+    .part1 {
+        width: calc(50% - 70px);
+        margin-right: 70px;
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 90px;
+        }
+        p {
+            margin-bottom: 22px;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+    }
+    .part2 {
+        p {
+            font-size: 56;
+            line-height: 1.2;
+        }
+    }
+}
+#activities {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    width: calc(100% - 160px);
+
+    .part1 {
+        width: calc(50% - 70px);
+        margin-right: 70px;
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 90px;
+        }
+        p {
+            margin-bottom: 22px;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+    }
+    .part2 {
+        width: calc(50%);
+        img {
+            width: 100%;
+            box-shadow: 18px 18px 0 $accent;
+        }
+    }
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    height: 60px;
+    font-size: 18px;
+}

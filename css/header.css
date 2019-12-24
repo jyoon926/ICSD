@@ -1,12 +1,25 @@
 html {
-  scroll-behavior: smooth;
+  background: #a2a4a2;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "nimbus-sans";
+  margin: 0;
+  padding: 0;
+}
+
+.transition {
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
 @media screen and (min-width: 1050px) {
   header {
     position: fixed;
-    height: 60px;
-    background-color: #36D1DC;
+    height: 80px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21,8 +34,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid black;
     z-index: 3;
+    background: rgba(162, 164, 162, 0.35);
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
   }
   header div {
     display: -webkit-box;
@@ -41,8 +56,8 @@ html {
     width: 100%;
   }
   header div .logo_header {
-    height: 26px;
-    margin: 0 18px;
+    height: 30px;
+    margin: 0 24px;
   }
   header div #header-links {
     display: -webkit-box;
@@ -52,13 +67,15 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   header div #header-links a {
-    color: black;
+    color: #232423;
     text-decoration: none;
-    margin: 0 20px;
-    padding: 22px 0;
-    font-size: 1em;
+    margin-right: 60px;
+    font-size: 18px;
     line-height: 1;
     font-weight: 400;
     display: -webkit-box;
@@ -74,32 +91,31 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: #36D1DC 0px solid;
-    border-top: #36D1DC 0px solid;
-  }
-  header div #header-links :hover {
-    padding: 18px 0;
-    border-bottom: black 4px solid;
-    border-top: #36D1DC 4px solid;
-    color: black;
   }
   header div #contact-input {
     position: absolute;
     top: -20px;
   }
   header div #contact-button {
-    border-left: 1px solid black;
-    padding: 22px;
-    width: 140px;
-    text-align: center;
-    color: black;
+    padding: 0 60px;
+    height: 80px;
+    width: 80px;
+    color: #232423;
+    background: #ef4557;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 18px;
     line-height: 1;
-    font-style: italic;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header div #contact-button:hover {
-    background: rgba(0, 0, 0, 0.15);
     cursor: pointer;
   }
   header div #contact {
@@ -117,13 +133,12 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: calc(100% - 160px);
-    width: calc(100% - 160px);
-    top: 80px;
-    left: 80px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#36D1DC), to(#5B86E5));
-    background: linear-gradient(to bottom, #36D1DC, #5B86E5);
-    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #a2a4a2;
+    border: 1px solid #232423;
     opacity: 0;
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -134,11 +149,12 @@ html {
   }
   header div #contact h2 {
     font-size: 2em;
-    font-style: italic;
-    line-height: 2;
+    line-height: 1;
+    font-weight: 400;
   }
   header div #contact h1 {
     font-size: 8vw;
+    font-weight: 400;
     line-height: 1;
     margin-bottom: 40px;
   }
@@ -158,22 +174,27 @@ html {
             align-items: center;
   }
   header div #contact .buttons a {
-    padding: 14px 24px;
-    border: 1px solid black;
+    color: #232423;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 18px 30px;
+    background: #a2a4a2;
     margin-right: 20px;
-  }
-  header div #contact .buttons a:hover {
-    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid #232423;
   }
   header div #contact .buttons a:last-child {
     margin: 0;
   }
+  header div #contact .buttons a:hover {
+    border: 1px solid #ef4557;
+    background: #ef4557;
+  }
   header div #contact #exit {
     position: fixed;
-    top: -1px;
-    right: -1px;
+    top: 0;
+    right: 0;
     padding: 30px;
-    border: 1px solid black;
+    background: #ef4557;
   }
   header div #contact #exit img {
     height: 40px;
@@ -181,7 +202,6 @@ html {
   }
   header div #contact #exit:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.15);
   }
   header div #contact-input:checked ~ #contact {
     opacity: 1;
@@ -201,7 +221,7 @@ html {
     position: fixed;
     height: 50px;
     top: 0;
-    background-color: #36D1DC;
+    background-color: #a2a4a2;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,7 +236,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #232423;
     z-index: 3;
   }
   header div {
@@ -254,8 +274,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#36D1DC), to(#5B86E5));
-    background: linear-gradient(to bottom, #36D1DC, #5B86E5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2a4a2), to(#a2a4a2));
+    background: linear-gradient(to bottom, #a2a4a2, #a2a4a2);
     height: 100%;
     width: 100%;
     top: 0;
@@ -266,7 +286,7 @@ html {
             transition-duration: .6s;
     -webkit-transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
             transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
-    border-left: 1px solid black;
+    border-left: 1px solid #232423;
   }
   header div #header-links a {
     font-size: 2em;
@@ -282,7 +302,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #232423;
   }
   header div #header-links a:last-child {
     border-bottom: none;
@@ -305,9 +325,9 @@ html {
     top: 0;
     right: 0;
     height: 50px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    background: #36D1DC;
+    border-left: 1px solid #232423;
+    border-bottom: 1px solid #232423;
+    background: #a2a4a2;
   }
   .menu-icon img {
     height: 26px;
@@ -323,4 +343,4 @@ html {
     right: 0;
   }
 }
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=header.css.map */

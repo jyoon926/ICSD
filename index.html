@@ -1,93 +1,88 @@
 
 <html>
-        <head>
-            <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
-            <title>Ithaca High School TSA</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <link rel="stylesheet" href="css/main.css">
-            <link rel="stylesheet" href="css/main-mobile.css">
-            <link rel="stylesheet" href="css/menu.css">
-            <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
-        </head>
-        <body onload="init()">
-            <div id="cursor" onload="everyTick()"></div>
-            <div id="bg"></div>
-            <header>
-                <div>
-                    <input type="checkbox" id="checkbox" class="checkbox">
-                    <label for="checkbox" class="menu-icon transition"><img src="img/menu.svg" alt=""></label>
-                    <a href="index.html" onmouseover="hover()" onmouseout="hoverOut()"><img src="img/logo_header.svg" alt="" class="logo_header"></a>
-                    <div id="header-links">
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Submissions</a>
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Fundraising</a>
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Courses</a>
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Officers</a>
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Advisors</a>
-                        <a href="#" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Works Cited</a>
-                    </div>
-                    <input type="checkbox" id="contact-input" class="contact-input">
-                    <label for="contact-input" id="contact-button" class="contact-button transition" onmouseover="hover()" onmouseout="hoverOut()">Contact Us</label>
-                    <div id="contact" class="transition">
-                        <h2>Hello!</h2>
-                        <h1>Contact us here:</h1>
-                        <div class="buttons">
-                            <a href="ihstsa@gmail.com" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Email</a>
-                            <a href="tel:+1-123-456-7890" class="transition" onmouseover="hover()" onmouseout="hoverOut()">Phone</a>
-                        </div>
-                        <label for="contact-input" id="exit" class="transition" onmouseover="hover()" onmouseout="hoverOut()"><img src="img/x.svg" alt=""></label>
-                    </div>
+    <head>
+        <title>Ithaca High School TSA</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    </head>
+    <body onload="init()">
+        <header>
+            <div>
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox" class="menu-icon transition"><img src="img/menu.svg" alt=""></label>
+                <a href="index.html"><img src="img/logo_header.png" alt="" class="logo_header"></a>
+                <div id="header-links">
+                    <a href="#" class="transition">About</a>
+                    <a href="#" class="transition">Submissions</a>
+                    <a href="#" class="transition">Fundraising</a>
                 </div>
-            </header>
-    
-            <div class="lander">
-                <div class="text">
-                    <p class="t">IHSTSA</p>
-                    <p class="p"><b>Ithaca High School Technology Student Association</b> is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
-                    <a href="#whatistsa" class="button transition" onmouseover="hover()" onmouseout="hoverOut()">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
+                <input type="checkbox" id="contact-input" class="contact-input">
+                <label for="contact-input" id="contact-button" class="contact-button transition">Contact</label>
+                <div id="contact" class="transition">
+                    <h2>Hello!</h2>
+                    <h1>Contact us here:</h1>
+                    <div class="buttons">
+                        <a href="ihstsa@gmail.com" class="transition">Email</a>
+                        <a href="tel:+1-123-456-7890" class="transition">Phone</a>
+                    </div>
+                    <label for="contact-input" id="exit" class="transition"><img src="img/x.svg" alt=""></label>
                 </div>
-                <img id="landerimg" src="img/lander_image.jfif" alt="">
             </div>
-    
-            <div class="content">
-    
-                <section id="donate">
-                    <p><a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E130565&id=41" target="none" class="transition">Donate to IHSTSA!</a> Help us send as many of our bright and passionate team members as we can to the conferences.</p>
-                </section>
-                <hr>
-                <section class="section1" id="whatistsa">
-                    <div class="part1">
-                        <h2>About TSA</h2>
-                        <p>Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
-                        <a href="https://tsaweb.org/" class="button transition" onmouseover="hover()" onmouseout="hoverOut()" target="none">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
-                    </div>
-                    <div class="part2">
-                        <p><b>250,000+</b> Students</p>
-                        <p><b>2,500+</b> Teachers</p>
-                        <p><b>2,000+</b> Schools</p>
-                        <p><b>48</b> State Delegations</p>
-                        <p><b>4</b> Countries</p>
-                    </div>
-                </section>
-                <hr>
-                <section class="section1" id="activities">
-                    <div class="part1">
-                        <h2>Activities & Fundraising</h2>
-                        <p>IHSTSA members put in a lot of work to be able to compete in regional and national conferences. However, expenses are high, as well as material costs. Donating to our TSA team helps us send as many of our bright and passionate team members as we can.</p>
-                        <a href="#" class="button transition" onmouseover="hover()" onmouseout="hoverOut()" target="none">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
-                    </div>
-                    <div class="part2">
-                        <img src="img/pig.jpg" alt="">
-                    </div>
-                </section>
-                <hr>
+        </header>
+
+        <div class="lander">
+            <p class="t">Ithaca High School TSA</p>
+            <div id="landerimg"></div>
+            <div class="text">
+                <p class="p"><b>Ithaca High School Technology Student Association</b> is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
+                <a href="#whatistsa" class="button transition">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
             </div>
-    
-            <div class="bottom">Designed and developed by Jacob Yoon</div>
-    
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	        <script src="js/script.js"></script>
-        </body>
-    </html>
+        </div>
+
+        <div class="content">
+
+            <hr>
+
+            <section id="donate">
+                <p><a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E130565&id=41" target="none" class="transition">Donate to IHSTSA!</a> Help us send as many of our bright and passionate team members as we can to the conferences!</p>
+            </section>
+            <hr>
+            <section class="section1" id="whatistsa">
+                <div class="part1">
+                    <h2>About TSA</h2>
+                    <p>Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
+                    <a href="https://tsaweb.org/" class="button transition" target="none">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
+                </div>
+                <div class="part2">
+                    <p><b>250,000+</b> Students</p>
+                    <p><b>2,500+</b> Teachers</p>
+                    <p><b>2,000+</b> Schools</p>
+                    <p><b>48</b> State Delegations</p>
+                    <p><b>4</b> Countries</p>
+                </div>
+            </section>
+            <hr>
+            <section class="section1" id="activities">
+                <div class="part1">
+                    <h2>Activities & Fundraising</h2>
+                    <p>IHSTSA members put in a lot of work to be able to compete in regional and national conferences. However, expenses are high, as well as material costs. Donating to our TSA team helps us send as many of our bright and passionate team members as we can.</p>
+                    <a href="#" class="button transition" target="none">Learn More <img src="img/whiteArrowRight.svg" alt=""></a>
+                </div>
+                <div class="part2">
+                    <img src="img/pig.jpg" alt="">
+                </div>
+            </section>
+            <hr>
+        </div>
+
+        <div class="bottom">Designed and developed by Jacob Yoon</div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

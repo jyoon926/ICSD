@@ -1,0 +1,224 @@
+html {
+  background: #a2a4a2;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "nimbus-sans";
+}
+
+.transition {
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.button {
+  color: #232423;
+  font-size: 22px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 0 12px 0;
+  border-bottom: 2px solid #232423;
+  width: 150px;
+}
+
+.button img {
+  height: 15px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+.button:hover {
+  background: #ef4557;
+  padding: 14px 24px 12px 24px;
+}
+
+.lander {
+  color: #232423;
+  height: calc(100vh - 160px);
+  padding: 80px;
+  width: calc(100% - 160px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 7vw auto;
+      grid-template-rows: 7vw auto;
+  grid-gap: 80px;
+}
+
+.lander .t {
+  font-size: 7vw;
+  font-weight: 400;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 1 / 1 / 4;
+}
+
+.lander #landerimg {
+  background-image: url("../img/marvin closeup.jpg");
+  background-size: cover;
+  background-position: right;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 2 / 3;
+  -webkit-box-shadow: 18px 18px 0 #ef4557;
+          box-shadow: 18px 18px 0 #ef4557;
+}
+
+.lander .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.lander .text .p {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+hr {
+  border: 1px solid #232423;
+  width: 100%;
+}
+
+#donate {
+  margin: 80px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+}
+
+#donate a {
+  color: white;
+  background: #ef4557;
+  padding: 6px 14px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+#whatistsa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 80px;
+  width: calc(100% - 160px);
+}
+
+#whatistsa .part1 {
+  width: calc(50% - 70px);
+  margin-right: 70px;
+}
+
+#whatistsa .part1 h2 {
+  margin-bottom: 30px;
+  font-size: 90px;
+}
+
+#whatistsa .part1 p {
+  margin-bottom: 22px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#whatistsa .part2 p {
+  font-size: 56;
+  line-height: 1.2;
+}
+
+#activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 80px;
+  width: calc(100% - 160px);
+}
+
+#activities .part1 {
+  width: calc(50% - 70px);
+  margin-right: 70px;
+}
+
+#activities .part1 h2 {
+  margin-bottom: 30px;
+  font-size: 90px;
+}
+
+#activities .part1 p {
+  margin-bottom: 22px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#activities .part2 {
+  width: calc(50%);
+}
+
+#activities .part2 img {
+  width: 100%;
+  -webkit-box-shadow: 18px 18px 0 #ef4557;
+          box-shadow: 18px 18px 0 #ef4557;
+}
+
+.bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #232423;
+  height: 60px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=home.css.map */
