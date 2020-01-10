@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 * {
-  font-family: "nimbus-sans";
+  font-family: "GoodSans-Regular";
 }
 
 .transition {
@@ -24,7 +25,7 @@ body {
 
 .button {
   color: #232423;
-  font-size: 22px;
+  font-size: 1em;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,13 +104,14 @@ body {
 
 .lander .text .p {
   margin-bottom: 40px;
-  font-size: 22px;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.618;
 }
 
 hr {
   border: 1px solid #232423;
   width: 100%;
+  margin: 0;
 }
 
 #donate {
@@ -124,7 +126,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 22px;
+  font-size: 1em;
   color: #232423;
 }
 
@@ -162,8 +164,8 @@ hr {
 
 #whatistsa .part1 p {
   margin-bottom: 22px;
-  font-size: 22px;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.618;
 }
 
 #whatistsa .part2 p {
@@ -196,8 +198,8 @@ hr {
 
 #activities .part1 p {
   margin-bottom: 22px;
-  font-size: 22px;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.618;
 }
 
 #activities .part2 {
@@ -223,6 +225,6 @@ hr {
           align-items: center;
   color: #232423;
   height: 60px;
-  font-size: 18px;
+  font-size: 1em;
 }
 /*# sourceMappingURL=home.css.map */

@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 * {
-  font-family: "nimbus-sans";
+  font-family: "GoodSans-Regular";
 }
 
 .transition {
@@ -81,7 +82,7 @@ body {
     color: #232423;
     text-decoration: none;
     margin-right: 60px;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1;
     font-weight: 400;
     display: -webkit-box;
@@ -109,7 +110,7 @@ body {
     color: #232423;
     background: #ef4557;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 1;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,7 +183,7 @@ body {
   header div #contact .buttons a {
     color: #232423;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     padding: 18px 30px;
     background: #a2a4a2;
     margin-right: 20px;

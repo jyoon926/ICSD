@@ -2,7 +2,7 @@
 
 .button {
     color: $dark;
-    font-size: 22px;
+    font-size: 1em;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -49,14 +49,15 @@
         justify-content: flex-end;
         .p {
             margin-bottom: 40px;
-            font-size: 22px;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.618;
         }
     }
 }
 hr {
     border: 1px solid $dark;
     width: 100%;
+    margin: 0;
 }
 #donate {
     margin: 80px 0;
@@ -64,7 +65,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 1em;
     color: $dark;
     a {
         color: white;
@@ -91,8 +92,8 @@ hr {
         }
         p {
             margin-bottom: 22px;
-            font-size: 22px;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.618;
         }
     }
     .part2 {
@@ -119,8 +120,8 @@ hr {
         }
         p {
             margin-bottom: 22px;
-            font-size: 22px;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.618;
         }
     }
     .part2 {
@@ -139,5 +140,5 @@ hr {
     align-items: center;
     color: $dark;
     height: 60px;
-    font-size: 18px;
+    font-size: 1em;
 }
