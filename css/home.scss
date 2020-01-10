@@ -1,5 +1,6 @@
-@import 'styles';
-
+$bg: #D6E4FF;
+$dark: #232423;
+$accent: #558BFF;
 .button {
     color: $dark;
     font-size: 1em;
@@ -31,17 +32,16 @@
     grid-template-rows: 7vw auto;
     grid-gap: 80px;
     .t {
-        font-size: 7vw;
+        font-size: 6vw;
         font-weight: 400;
         grid-area: 1 / 1 / 1 / 4;
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
     }
     #landerimg {
         background-image: url('../img/marvin\ closeup.jpg');
         background-size: cover;
         background-position: right;
         grid-area: 2 / 1 / 2 / 3;
-        box-shadow: 18px 18px 0 $accent;
     }
     .text {
         display: flex;
@@ -128,7 +128,6 @@ hr {
         width: calc(50%);
         img {
             width: 100%;
-            box-shadow: 18px 18px 0 $accent;
         }
     }
 }

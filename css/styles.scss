@@ -1,6 +1,6 @@
-$bg: rgb(162, 164, 162);
+$bg: #D6E4FF;
 $dark: #232423;
-$accent: #ef4557;
+$accent: #558BFF;
 
 html {
     background: $bg;
@@ -22,4 +22,10 @@ body {
     transition-duration: .3s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
+}
+.image {
+    border-radius: 22px;
+    box-shadow: 
+        10px 6px 20px rgba(85,139,255,.4),
+        -10px -6px 20px rgba(255,255,255,0.7);
 }

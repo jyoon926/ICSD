@@ -1,28 +1,3 @@
-html {
-  background: #a2a4a2;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-size: 18px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  font-family: "GoodSans";
-}
-
-.transition {
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
-
 @media screen and (min-width: 1050px) {
   header {
     position: fixed;
@@ -42,7 +17,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     z-index: 3;
-    background: rgba(162, 164, 162, 0.35);
     -webkit-backdrop-filter: blur(25px);
             backdrop-filter: blur(25px);
   }
@@ -107,8 +81,8 @@ body {
     padding: 0 60px;
     height: 80px;
     width: 80px;
-    color: #232423;
-    background: #ef4557;
+    color: white;
+    background: #558BFF;
     text-decoration: none;
     font-size: 1em;
     line-height: 1;
@@ -144,7 +118,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: #a2a4a2;
+    background: #D6E4FF;
     border: 1px solid #232423;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -185,7 +159,7 @@ body {
     text-decoration: none;
     font-size: 1em;
     padding: 18px 30px;
-    background: #a2a4a2;
+    background: #D6E4FF;
     margin-right: 20px;
     border: 1px solid #232423;
   }
@@ -193,15 +167,16 @@ body {
     margin: 0;
   }
   header div #contact .buttons a:hover {
-    border: 1px solid #ef4557;
-    background: #ef4557;
+    border: 1px solid #558BFF;
+    background: #558BFF;
+    color: white;
   }
   header div #contact #exit {
     position: fixed;
     top: 0;
     right: 0;
     padding: 30px;
-    background: #ef4557;
+    background: #558BFF;
   }
   header div #contact #exit img {
     height: 40px;
@@ -228,7 +203,7 @@ body {
     position: fixed;
     height: 50px;
     top: 0;
-    background-color: #a2a4a2;
+    background-color: #D6E4FF;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,8 +256,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a2a4a2), to(#a2a4a2));
-    background: linear-gradient(to bottom, #a2a4a2, #a2a4a2);
+    background: -webkit-gradient(linear, left top, left bottom, from(#D6E4FF), to(#D6E4FF));
+    background: linear-gradient(to bottom, #D6E4FF, #D6E4FF);
     height: 100%;
     width: 100%;
     top: 0;
@@ -334,7 +309,7 @@ body {
     height: 50px;
     border-left: 1px solid #232423;
     border-bottom: 1px solid #232423;
-    background: #a2a4a2;
+    background: #D6E4FF;
   }
   .menu-icon img {
     height: 26px;
