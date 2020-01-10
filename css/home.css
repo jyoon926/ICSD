@@ -143,7 +143,7 @@ hr {
 
 #whatistsa .part2 p {
   font-size: 56;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 #activities {
@@ -196,6 +196,6 @@ hr {
           align-items: center;
   color: #232423;
   height: 60px;
-  font-size: 1em;
+  font-size: 14px;
 }
 /*# sourceMappingURL=home.css.map */
