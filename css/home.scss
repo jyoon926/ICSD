@@ -1,23 +1,6 @@
 $bg: #D6DDFF;
 $dark: #232423;
 $accent: #1C5CDE;
-.button {
-    color: $bg;
-    font-size: 1em;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 35px;
-    background: $accent;
-    border: 2px solid $accent;
-    border-radius: 0 10px 0 10px;
-    &:hover {
-        background: none;
-        color: $accent;
-    }
-}
 @media screen and (min-width: 1200px) {
     .content {
         width: calc(100vw - 160px);
@@ -195,54 +178,6 @@ $accent: #1C5CDE;
                 max-width: 800px;
                 text-align: center;
             }
-    }
-    iframe {
-        width: 100vw;
-        height: 450px;
-    }
-    footer {
-        width: 100%;
-        padding: 80px 80px;
-        box-sizing: border-box;
-        background: $accent;
-        color: $bg;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 40px;
-        .col {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            img {
-                height: 60px;
-                margin-bottom: 20px;
-            }
-            p {
-                line-height: 1.618;
-            }
-            h2 {
-                margin: 0 0 20px 0;
-            }
-            a {
-                color: $bg;
-                transition-duration: .4s;
-                line-height: 1.618;
-                &:hover {
-                    opacity: .5;
-                }
-            }
-        }
-    }
-    .bottom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $accent;
-        color: $bg;
-        height: 50px;
-        font-size: 14px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -428,88 +363,5 @@ $accent: #1C5CDE;
     iframe {
         width: 100vw;
         height: 450px;
-    }
-    footer {
-        width: 100%;
-        padding: 80px 40px;
-        box-sizing: border-box;
-        background: $accent;
-        color: $bg;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 20px;
-        .col {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            img {
-                height: 60px;
-                margin-bottom: 20px;
-            }
-            p {
-                line-height: 1.618;
-            }
-            h2 {
-                margin: 0 0 20px 0;
-            }
-            a {
-                color: $bg;
-                transition-duration: .4s;
-                line-height: 1.618;
-                &:hover {
-                    opacity: .5;
-                }
-            }
-        }
-    }
-    .bottom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $accent;
-        color: $bg;
-        height: 50px;
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 900px) {
-    footer {
-        width: 100%;
-        padding: 80px 40px;
-        background: $accent;
-        color: $bg;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .col {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 40px;
-            img {
-                height: 60px;
-                margin-bottom: 20px;
-            }
-            p {
-                line-height: 1.618;
-            }
-            h2 {
-                margin: 0 0 20px 0;
-            }
-            a {
-                color: $bg;
-                transition-duration: .4s;
-                line-height: 1.618;
-                &:hover {
-                    opacity: .5;
-                }
-            }
-            &:last-child {
-                margin: 0 0 -20px 0;
-            }
-        }
     }
 }

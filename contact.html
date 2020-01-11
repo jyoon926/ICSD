@@ -1,0 +1,75 @@
+
+<html>
+    <head>
+        <title>Contact | Ithaca High School TSA</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    </head>
+    <body onload="init()">
+        <header>
+            <div>
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox" class="menu-icon transition"><img src="img/menu.svg" alt=""></label>
+                <a href="index.html" class="logo-header">IHSTSA</a>
+                <div id="header-links">
+                    <a href="#" class="transition">About</a>
+                    <a href="#" class="transition">Submissions</a>
+                    <a href="#" class="transition">Fundraising</a>
+                    <a href="#" class="transition">Courses</a>
+                    <a href="contact.html" class="transition">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+
+            <div class="lander">
+                <h1>Send us a message!</h1>
+                <form action="https://formspree.io/contact@ihstsa.us" method="POST" novalidate>
+                    <input class="textbox" type="text" name="name" placeholder="Name" required>
+                    <input class="textbox" type="email" name="_replyto" placeholder="Email" required>
+                    <input class="textbox" type="text" name="subject" placeholder="Subject" required/>
+                    <textarea class="textbox" name="message" placeholder="Message" required></textarea>
+                    <input class="send" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4950.652768442725!2d-76.50370011986199!3d42.4559147257561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sus!4v1578705864463!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <footer>
+            <div class="col">
+                <a href="https://tsaweb.org/" target="none"><img src="img/logo_header.svg" alt=""></a>
+                <p>1401 N Cayuga St<br>Ithaca, NY 14850</p>
+            </div>
+            <div class="col">
+                <h2>Links</h2>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Submissions</a>
+                <a href="#">Fundraising</a>
+                <a href="#">Courses</a>
+            </div>
+            <div class="col">
+                <h2>External</h2>
+                <a href="#">Design Brief</a>
+                <a href="#">References</a>
+            </div>
+            <div class="col">
+                <h2>Contact</h2>
+                <a href="mailto:contact@ihstsa.us">contact@ihstsa.us</a>
+                <a href="contact.html">Email Form</a>
+            </div>
+        </footer>
+        <div class="bottom">Copyright © 2020 IHSTSA</div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

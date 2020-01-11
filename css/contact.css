@@ -1,0 +1,131 @@
+.content {
+  width: calc(100vw - 160px);
+  padding: 80px 80px 0 80px;
+}
+
+.lander {
+  color: #1C5CDE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 80px 0;
+  margin-top: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lander #landerimg {
+  background-image: url("../img/marvin closeup.jpg");
+  background-size: cover;
+  background-position: right;
+  width: calc(50% - 80px);
+  height: calc(100vh - 80px - 80px - 80px);
+}
+
+.lander h1 {
+  font-size: 5em;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+
+.lander form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lander form .textbox {
+  background: rgba(255, 255, 255, 0);
+  color: #1C5CDE;
+  font-size: 1em;
+  padding: 12px 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #1C5CDE;
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.lander form .textbox:focus {
+  border-width: 5px;
+  margin-bottom: 37px;
+}
+
+.lander form .textbox::-webkit-input-placeholder {
+  color: #1C5CDE;
+}
+
+.lander form .textbox:-ms-input-placeholder {
+  color: #1C5CDE;
+}
+
+.lander form .textbox::-ms-input-placeholder {
+  color: #1C5CDE;
+}
+
+.lander form .textbox::placeholder {
+  color: #1C5CDE;
+}
+
+.lander form textarea {
+  height: 400px;
+  resize: vertical;
+}
+
+.lander form textarea:focus {
+  height: 403px;
+}
+
+.lander form .send {
+  color: #D6DDFF;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 14px 35px;
+  background: #1C5CDE;
+  border: 2px solid #1C5CDE;
+  border-radius: 0 10px 0 10px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.lander form .send:hover {
+  background: none;
+  color: #1C5CDE;
+}
+
+@media screen and (max-width: 1199px) {
+  .content {
+    width: calc(100vw - 80px);
+    padding: 40px;
+  }
+  .lander h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .lander h1 {
+    font-size: 2.75em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
