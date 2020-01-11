@@ -37,11 +37,11 @@ $accent: #1C5CDE;
             background-image: url('../img/marvin\ closeup.jpg');
             background-size: cover;
             background-position: right;
-            width: calc(60% - 80px);
+            width: calc(50% - 80px);
             height: calc(100vh - 80px - 80px - 80px);
         }
         .text {
-            width: 40%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -319,7 +319,7 @@ $accent: #1C5CDE;
 
             h2 {
                 margin-bottom: 30px;
-                font-size: 4em;
+                font-size: 3em;
                 margin-top: 0;
             }
             p {
@@ -342,7 +342,7 @@ $accent: #1C5CDE;
             margin-top: 80px;
             p {
                 text-align: left;
-                font-size: 40;
+                font-size: 2em;
                 line-height: 1;
                 margin: 0;
                 line-height: 1.618;
@@ -361,7 +361,7 @@ $accent: #1C5CDE;
 
             h2 {
                 margin-bottom: 30px;
-                font-size: 4em;
+                font-size: 3em;
                 margin-top: 0;
             }
             p {
@@ -388,7 +388,7 @@ $accent: #1C5CDE;
 
             h2 {
                 margin-bottom: 30px;
-                font-size: 4em;
+                font-size: 3em;
                 margin-top: 0;
             }
             p {
@@ -414,7 +414,7 @@ $accent: #1C5CDE;
 
             h2 {
                 margin-bottom: 30px;
-                font-size: 4em;
+                font-size: 3em;
                 margin-top: 0;
             }
             p {
