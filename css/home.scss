@@ -1,52 +1,54 @@
-$bg: #D6E4FF;
+$bg: #D6DDFF;
 $dark: #232423;
-$accent: #558BFF;
+$accent: #1C5CDE;
 .button {
-    color: $dark;
+    color: $bg;
     font-size: 1em;
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 14px 0 12px 0;
-    border-bottom: 2px solid $dark;
-    width: 150px;
-    img {
-        height: 15px;
-        width: 24px;
-        margin-left: 10px;
-    }
+    padding: 15px 35px;
+    background: $accent;
+    border: 2px solid $accent;
+    border-radius: 0 10px 0 10px;
     &:hover {
-        background: $accent;
-        padding: 14px 24px 12px 24px;
+        background: none;
+        color: $accent;
     }
 }
 
-.lander {
-    color: $dark;
-    height: calc(100vh - 160px);
-    padding: 80px;
+.content {
     width: calc(100% - 160px);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 7vw auto;
-    grid-gap: 80px;
-    .t {
-        font-size: 6vw;
-        font-weight: 400;
-        grid-area: 1 / 1 / 1 / 4;
-        margin: 20px 0 0 0;
-    }
+    padding: 80px;
+}
+
+.lander {
+    color: $accent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
     #landerimg {
         background-image: url('../img/marvin\ closeup.jpg');
         background-size: cover;
         background-position: right;
-        grid-area: 2 / 1 / 2 / 3;
+        width: calc(60% - 80px);
+        height: 600px;
     }
     .text {
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: flex-start;
+        h1 {
+            font-size: 5vw;
+            font-weight: 400;
+            margin: 0 0 40px 0;
+        }
         .p {
             margin-bottom: 40px;
             font-size: 1em;
@@ -79,47 +81,59 @@ hr {
 #whatistsa {
     display: flex;
     flex-direction: row;
-    padding: 80px;
-    width: calc(100% - 160px);
-    color: $dark;
+    padding: 80px 0;
+    color: $accent;
+    margin: 0;
     .part1 {
         width: calc(50% - 70px);
         margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         h2 {
             margin-bottom: 30px;
             font-size: 90px;
+            margin-top: 0;
         }
         p {
-            margin-bottom: 22px;
+            margin-bottom: 40px;
             font-size: 1em;
             line-height: 1.618;
         }
     }
     .part2 {
+        width: 50%;
         p {
+            text-align: center;
             font-size: 56;
             line-height: 1;
+            margin: 0;
+            line-height: 1.618;
         }
     }
 }
 #activities {
     display: flex;
     flex-direction: row;
-    padding: 80px;
-    width: calc(100% - 160px);
+    align-items: flex-start;
+    color: $accent;
+    padding: 80px 0;
 
     .part1 {
         width: calc(50% - 70px);
         margin-right: 70px;
-        color: $dark;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         h2 {
             margin-bottom: 30px;
             font-size: 90px;
+            margin-top: 0;
         }
         p {
-            margin-bottom: 22px;
+            margin-bottom: 40px;
             font-size: 1em;
             line-height: 1.618;
         }
@@ -137,7 +151,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $dark;
+    background: $accent;
+    color: $bg;
     height: 60px;
     font-size: 14px;
 }

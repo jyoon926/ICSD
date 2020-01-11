@@ -1,5 +1,5 @@
 .button {
-  color: #232423;
+  color: #D6DDFF;
   font-size: 1em;
   text-decoration: none;
   display: -webkit-box;
@@ -9,60 +9,56 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14px 0 12px 0;
-  border-bottom: 2px solid #232423;
-  width: 150px;
-}
-
-.button img {
-  height: 15px;
-  width: 24px;
-  margin-left: 10px;
+  padding: 15px 35px;
+  background: #1C5CDE;
+  border: 2px solid #1C5CDE;
+  border-radius: 0 10px 0 10px;
 }
 
 .button:hover {
-  background: #558BFF;
-  padding: 14px 24px 12px 24px;
+  background: none;
+  color: #1C5CDE;
+}
+
+.content {
+  width: calc(100% - 160px);
+  padding: 80px;
 }
 
 .lander {
-  color: #232423;
-  height: calc(100vh - 160px);
-  padding: 80px;
-  width: calc(100% - 160px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 7vw auto;
-      grid-template-rows: 7vw auto;
-  grid-gap: 80px;
-}
-
-.lander .t {
-  font-size: 6vw;
-  font-weight: 400;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 1 / 1 / 1 / 4;
-  margin: 20px 0 0 0;
+  color: #1C5CDE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
 }
 
 .lander #landerimg {
   background-image: url("../img/marvin closeup.jpg");
   background-size: cover;
   background-position: right;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 2 / 1 / 2 / 3;
+  width: calc(60% - 80px);
+  height: 600px;
 }
 
 .lander .text {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +69,15 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lander .text h1 {
+  font-size: 5vw;
+  font-weight: 400;
+  margin: 0 0 40px 0;
 }
 
 .lander .text .p {
@@ -105,7 +110,7 @@ hr {
 
 #donate a {
   color: white;
-  background: #558BFF;
+  background: #1C5CDE;
   padding: 6px 14px;
   text-decoration: none;
   margin-right: 10px;
@@ -120,30 +125,48 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 80px;
-  width: calc(100% - 160px);
-  color: #232423;
+  padding: 80px 0;
+  color: #1C5CDE;
+  margin: 0;
 }
 
 #whatistsa .part1 {
   width: calc(50% - 70px);
   margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #whatistsa .part1 h2 {
   margin-bottom: 30px;
   font-size: 90px;
+  margin-top: 0;
 }
 
 #whatistsa .part1 p {
-  margin-bottom: 22px;
+  margin-bottom: 40px;
   font-size: 1em;
   line-height: 1.618;
 }
 
+#whatistsa .part2 {
+  width: 50%;
+}
+
 #whatistsa .part2 p {
+  text-align: center;
   font-size: 56;
   line-height: 1;
+  margin: 0;
+  line-height: 1.618;
 }
 
 #activities {
@@ -154,23 +177,36 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 80px;
-  width: calc(100% - 160px);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #1C5CDE;
+  padding: 80px 0;
 }
 
 #activities .part1 {
   width: calc(50% - 70px);
   margin-right: 70px;
-  color: #232423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #activities .part1 h2 {
   margin-bottom: 30px;
   font-size: 90px;
+  margin-top: 0;
 }
 
 #activities .part1 p {
-  margin-bottom: 22px;
+  margin-bottom: 40px;
   font-size: 1em;
   line-height: 1.618;
 }
@@ -194,7 +230,8 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #232423;
+  background: #1C5CDE;
+  color: #D6DDFF;
   height: 60px;
   font-size: 14px;
 }

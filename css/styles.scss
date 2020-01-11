@@ -1,6 +1,6 @@
-$bg: #D6E4FF;
+$bg: #D6DDFF;
 $dark: #232423;
-$accent: #558BFF;
+$accent: #1C5CDE;
 
 html {
     background: $bg;
@@ -16,6 +16,8 @@ body {
 }
 * {
     font-family: "GoodSans";
+    text-decoration: none;
+    font-weight: 450;
 }
 .transition {
     -webkit-transition-duration: .3s;
@@ -27,5 +29,12 @@ body {
     border-radius: 22px;
     box-shadow: 
         10px 6px 20px rgba(85,139,255,.4),
-        -10px -6px 20px rgba(255,255,255,0.7);
+        -10px -6px 20px rgba(255,255,255,.9);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: $bg;
+}
+::-webkit-scrollbar-thumb {
+    background: $accent;
 }

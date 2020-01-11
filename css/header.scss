@@ -1,6 +1,6 @@
-$bg: #D6E4FF;
+$bg: #D6DDFF;
 $dark: #232423;
-$accent: #558BFF;
+$accent: #1C5CDE;
 @media screen and (min-width: 1050px) {
     header {
         position: fixed;
@@ -11,6 +11,7 @@ $accent: #558BFF;
         justify-content: center;
         align-items: center;
         z-index: 3;
+        background: rgba(214,221,255,.5);
         backdrop-filter: blur(25px);
 
         div {
@@ -20,9 +21,11 @@ $accent: #558BFF;
             align-items: center;
             width: 100%;
 
-            .logo_header {
-                height: 30px;
-                margin: 0 24px;
+            .logo-header {
+                font-size: 30px;
+                color: $accent;
+                font-weight: 450;
+                padding: 0 30px;
             }
 
             #header-links {
@@ -30,7 +33,7 @@ $accent: #558BFF;
                 flex-direction: row;
                 justify-content: flex-end;
                 a {
-                    color: $dark;
+                    color: $accent;
                     text-decoration: none;
                     margin-right: 60px;
                     font-size: 1em;

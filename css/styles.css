@@ -1,5 +1,5 @@
 html {
-  background: #D6E4FF;
+  background: #D6DDFF;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -14,6 +14,8 @@ body {
 
 * {
   font-family: "GoodSans";
+  text-decoration: none;
+  font-weight: 450;
 }
 
 .transition {
@@ -25,7 +27,16 @@ body {
 
 .image {
   border-radius: 22px;
-  -webkit-box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.7);
-          box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.9);
+          box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #D6DDFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C5CDE;
 }
 /*# sourceMappingURL=styles.css.map */
