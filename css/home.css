@@ -376,7 +376,8 @@
     margin-top: 80px;
   }
   #whatistsa .part2 p {
-    text-align: left;
+    width: 100%;
+    text-align: center;
     font-size: 2em;
     line-height: 1;
     margin: 0;
