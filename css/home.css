@@ -50,12 +50,15 @@
     font-size: 4.5vw;
     font-weight: 400;
     margin: 0 0 40px 0;
-    text-indent: -5%;
+    text-indent: -4%;
   }
   .lander .text .p {
     margin-bottom: 40px;
     font-size: 1em;
     line-height: 1.618;
+  }
+  .lander .text .p b {
+    font-weight: 700;
   }
   #donate {
     margin: 80px 0;
@@ -295,6 +298,9 @@
     margin-bottom: 40px;
     font-size: 1em;
     line-height: 1.618;
+  }
+  .lander .text .p b {
+    font-weight: 700;
   }
   #donate {
     margin: 80px 0;

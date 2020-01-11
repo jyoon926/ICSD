@@ -1,0 +1,289 @@
+.content {
+  width: calc(100vw - 160px);
+  padding: 80px;
+}
+
+.lander {
+  color: #1C5CDE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+  height: calc(100vh - 80px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lander #landerimg {
+  background-image: url("../img/submissions.jpg");
+  background-size: cover;
+  background-position: center;
+  width: calc(50% - 80px);
+  height: calc(100vh - 80px - 80px - 80px);
+}
+
+.lander .text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lander .text h1 {
+  font-size: 4.5vw;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+
+.lander .text .p {
+  margin-bottom: 40px;
+  font-size: 1em;
+  line-height: 1.618;
+}
+
+.lander .text .p b {
+  font-weight: 700;
+}
+
+.section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 0 0px 0;
+}
+
+.section .text {
+  color: #1C5CDE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.section .text h2 {
+  font-size: 3em;
+  margin: 0 0 40px 0;
+}
+
+.section .text p {
+  line-height: 1.618;
+  font-size: 1em;
+  margin: 0;
+}
+
+.section .text h3 {
+  font-size: 1.5em;
+  line-height: 1.618;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.section2 {
+  padding: 120px 0 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1C5CDE;
+  text-align: center;
+}
+
+.section2 .text {
+  max-width: 1000px;
+}
+
+.section2 .text h2 {
+  font-size: 5em;
+  margin: 0 0 40px 0;
+}
+
+.section2 .text h3 {
+  font-size: 2em;
+}
+
+.section2 .text p {
+  line-height: 1.618;
+  font-size: 1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .content {
+    width: calc(100vw - 80px);
+    padding: 40px;
+  }
+  .lander {
+    color: #1C5CDE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 120px 0 40px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+  }
+  .lander #landerimg {
+    width: 100%;
+    margin-top: 40px;
+    height: 400px;
+  }
+  .lander .text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .lander .text h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+  }
+  .lander .text .p {
+    margin-bottom: 40px;
+    font-size: 1em;
+    line-height: 1.618;
+  }
+  .lander .text .p b {
+    font-weight: 700;
+  }
+  .section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 120px 0 0px 0;
+  }
+  .section .text {
+    color: #1C5CDE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+  }
+  .section .text h2 {
+    font-size: 2em;
+    margin: 0 0 40px 0;
+  }
+  .section .text p {
+    line-height: 1.618;
+    font-size: 1em;
+    margin: 0;
+  }
+  .section .text h3 {
+    font-size: 1.25em;
+    line-height: 1.618;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .section2 .text {
+    text-align: left;
+  }
+  .section2 .text h2 {
+    font-size: 3em;
+    margin: 0 0 40px 0;
+  }
+  .section2 .text h3 {
+    font-size: 1.75em;
+  }
+  .section2 .text p {
+    line-height: 1.618;
+    font-size: 1em;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=courses.css.map */

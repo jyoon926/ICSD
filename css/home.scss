@@ -33,12 +33,15 @@ $accent: #1C5CDE;
                 font-size: 4.5vw;
                 font-weight: 400;
                 margin: 0 0 40px 0;
-                text-indent: -5%;
+                text-indent: -4%;
             }
             .p {
                 margin-bottom: 40px;
                 font-size: 1em;
                 line-height: 1.618;
+                b {
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -218,6 +221,9 @@ $accent: #1C5CDE;
                 margin-bottom: 40px;
                 font-size: 1em;
                 line-height: 1.618;
+                b {
+                    font-weight: 700;
+                }
             }
         }
     }
