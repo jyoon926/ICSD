@@ -28,13 +28,16 @@ body {
 .image {
     border-radius: 22px;
     box-shadow: 
-        10px 6px 20px rgba(85,139,255,.4),
-        -10px -6px 20px rgba(255,255,255,.9);
+        10px 7px 20px rgba(85,139,255,.4),
+        -10px -7px 20px rgba(255,255,255,.9);
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    background: $bg;
+    width: 16px;
+    background: $accent;
 }
 ::-webkit-scrollbar-thumb {
-    background: $accent;
+    background: #001287;
+    &:hover {
+        cursor: pointer;
+    }
 }

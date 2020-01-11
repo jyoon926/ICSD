@@ -27,16 +27,20 @@ body {
 
 .image {
   border-radius: 22px;
-  -webkit-box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.9);
-          box-shadow: 10px 6px 20px rgba(85, 139, 255, 0.4), -10px -6px 20px rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 10px 7px 20px rgba(85, 139, 255, 0.4), -10px -7px 20px rgba(255, 255, 255, 0.9);
+          box-shadow: 10px 7px 20px rgba(85, 139, 255, 0.4), -10px -7px 20px rgba(255, 255, 255, 0.9);
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  background: #D6DDFF;
+  width: 16px;
+  background: #1C5CDE;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1C5CDE;
+  background: #001287;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

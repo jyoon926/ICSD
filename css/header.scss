@@ -11,7 +11,7 @@ $accent: #1C5CDE;
         justify-content: center;
         align-items: center;
         z-index: 3;
-        background: rgba(214,221,255,.5);
+        background: rgba(214,221,255,.65);
         backdrop-filter: blur(25px);
 
         div {
@@ -43,6 +43,10 @@ $accent: #1C5CDE;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    transition-duration: .4s;
+                    &:hover {
+                        opacity: .5;
+                    }
                 }
             }
             #contact-input {
@@ -149,13 +153,13 @@ $accent: #1C5CDE;
         position: fixed;
         height: 50px;
         top: 0;
-        background-color: $bg;
+        background: rgba(214,221,255,.65);
+        backdrop-filter: blur(25px);
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid $dark;
         z-index: 3;
     
         div {
@@ -164,10 +168,12 @@ $accent: #1C5CDE;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-    
-            .logo_header {
-                height: 26px;
-                margin: 0 18px;
+
+            .logo-header {
+                font-size: 26px;
+                color: $accent;
+                font-weight: 450;
+                padding: 0 18px;
             }
     
             #header-links {
@@ -177,7 +183,7 @@ $accent: #1C5CDE;
                 justify-content: center;
                 align-items: center;
                 background: linear-gradient(to bottom, $bg,$bg);
-                height: 100%;
+                height: 100vw;
                 width: 100%;
                 top: 0;
                 right: -101vw;
@@ -185,7 +191,6 @@ $accent: #1C5CDE;
                 opacity: 1;
                 transition-duration: .6s;
                 transition-timing-function: cubic-bezier(.64,0,.31,1);
-                border-left: 1px solid $dark;
         
                 a {
                     font-size: 2em;
@@ -195,7 +200,7 @@ $accent: #1C5CDE;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-bottom: 1px solid $dark;
+                    color: $accent;
                     &:last-child {
                         border-bottom: none;
                     }
@@ -221,14 +226,11 @@ $accent: #1C5CDE;
         top: 0;
         right: 0;
         height: 50px;
-        border-left: 1px solid $dark;
-        border-bottom: 1px solid $dark;
-        background: $bg; 
 
         img {
-            height: 26px;
-            width: 26px;
-            padding: 12px;
+            height: 30px;
+            width: 30px;
+            padding: 10px 14px;
         }
     }
     #checkbox {

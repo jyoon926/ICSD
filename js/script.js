@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     //Parallax effect
     if ($(window).width() > 600) {
 		var $bg = $('#landerimg');
@@ -11,3 +11,4 @@ $(document).ready(function(){
 });
 
 
+*/
