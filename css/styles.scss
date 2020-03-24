@@ -1,9 +1,28 @@
-$bg: #D6DDFF;
+$bg: white;
 $dark: #232423;
-$accent: #1C5CDE;
+$accent: black;
+
+/*
+IMPORT FONTS
+*/
+
+@font-face {
+    font-family: "Spezia-Medium";
+    src: url("Spezia-Medium.woff2") format("woff2"), url("Spezia-Medium.woff") format("woff"), url("Spezia-Medium.eot") format("embedded-opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Spezia-SemiBold";
+    src: url("Spezia-SemiBold.woff2") format("woff2"), url("Spezia-SemiBold.woff") format("woff");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 500;
+}
 
 html {
-    background: $bg;
+    background: white;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -16,9 +35,12 @@ body {
     overflow-x: hidden;
 }
 * {
-    font-family: "GoodSans";
+    font-family: "Spezia-Medium";
     text-decoration: none;
     font-weight: 450;
+    margin: 0;
+    padding: 0;
+    color: $accent;
 }
 .transition {
     -webkit-transition-duration: .3s;
@@ -26,18 +48,13 @@ body {
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
-.image {
-    border-radius: 22px;
-    box-shadow: 
-        9px 9px 20px rgba(85,139,255,.4),
-        -9px -9px 20px rgba(255,255,255,.9);
-}
 ::-webkit-scrollbar {
+    display: none;
     width: 10px;
-    background: $accent;
+    background: white;
 }
 ::-webkit-scrollbar-thumb {
-    background: #001287;
+    background: $accent;
 }
 iframe {
     width: 100vw;
@@ -51,10 +68,9 @@ iframe {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 35px;
+    padding: 15px 35px;
     background: $accent;
     border: 2px solid $accent;
-    border-radius: 0 10px 0 10px;
     &:hover {
         background: none;
         color: $accent;
@@ -79,6 +95,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
+    z-index: 11;
     .col {
         display: flex;
         flex-direction: column;
@@ -89,9 +106,11 @@ footer {
             margin-bottom: 20px;
         }
         p {
+            color: $bg;
             line-height: 1.618;
         }
         h2 {
+            color: $bg;
             margin: 0 0 20px 0;
         }
         a {
@@ -114,6 +133,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
+        z-index: 11;
         .col {
             display: flex;
             flex-direction: column;
@@ -149,6 +169,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 11;
         .col {
             display: flex;
             flex-direction: column;

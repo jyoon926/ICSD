@@ -1,374 +1,109 @@
-$bg: #D6DDFF;
+$bg: white;
 $dark: #232423;
-$accent: #1C5CDE;
-@media screen and (min-width: 1200px) {
-    .content {
-        width: calc(100vw - 160px);
-        padding: 80px;
-    }
+$accent: black;
 
-    .lander {
-        color: $accent;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 80px 0;
-        height: calc(100vh - 80px);
-        box-sizing: border-box;
-        #landerimg {
-            background-image: url('../img/marvin\ closeup.jpg');
-            background-size: cover;
-            background-position: right;
-            width: calc(50% - 80px);
-            height: calc(100vh - 80px - 80px - 80px);
-        }
-        .text {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            h1 {
-                font-size: 4.5vw;
-                font-weight: 400;
-                margin: 0 0 40px 0;
-                text-indent: -4%;
-            }
-            .p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                b {
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-    #donate {
-        margin: 80px 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1em;
-        color: $dark;
-        a {
-            color: white;
-            background: $accent;
-            padding: 6px 14px;
-            text-decoration: none;
-            margin-right: 10px;
-            font-style: italic;
-        }
-    }
-    #whatistsa {
-        display: flex;
-        flex-direction: row;
-        padding: 120px 80px;
-        color: $bg;
-        background: $accent;
-        margin: 0 -80px;
-        .part1 {
-            width: calc(50% - 70px);
-            margin-right: 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 4em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-            }
-            .button {
-                color: $accent;
-                background: $bg;
-                border: 2px solid $bg;
-                &:hover {
-                    background: none;
-                    color: $bg;
-                }
-            }
-        }
-        .part2 {
-            width: 50%;
-            p {
-                text-align: left;
-                font-size: 56;
-                line-height: 1;
-                margin: 0;
-                line-height: 1.618;
-                b {
-                    font-weight: 700 !important;
-                }
-            }
-        }
-    }
-    #submissions {
+.lander {
+    height: 100vh;
+    width: 100%;
+    padding: 60px 60px 0 60px;
+    box-sizing: border-box;
+    .text {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 4em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                max-width: 800px;
-                text-align: center;
-            }
-    }
-    #activities {
-        display: flex;
-        flex-direction: row;
         align-items: flex-start;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-        .part1 {
-            width: calc(50% - 70px);
-            margin-right: 70px;
+        justify-content: flex-start;
+        z-index: 1;
+        h1 {
+            font-size: 3em;
+            line-height: 1;
+            margin-bottom: 60px;
+            font-family: "Spezia-SemiBold";
+        }
+        #links {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 4em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-            }
-        }
-        .part2 {
-            width: calc(50%);
-            img {
-                width: 100%;
+            justify-content: flex-start;
+            position: static;
+            top: 60px;
+            z-index: 10;
+            a {
+                color: $accent;
+                line-height: 1.25;
             }
         }
     }
-    #courses {
+    #landerimg {
+        z-index: -1;
+        background-image: url('../img/tsa\ image.jpg');
+        background-size: cover;
+        width: 80%;
+        height: calc(100vh - 60px);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .buttons {
+        position: absolute;
+        height: 60px;
+        width: 80%;
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 4em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                max-width: 800px;
-                text-align: center;
-            }
+        flex-direction: row;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 0 60px;
+        .button1 {
+            height: 8px;
+            width: 8px;
+            background: $accent;
+            margin-right: 30px;
+            border: 2px solid black;
+        }
+        .button2 {
+            height: 8px;
+            width: 8px;
+            background: none;
+            border: 2px solid black;
+        }
+    }
+    .p {
+        z-index: 1;
+        width: 400px;
+        position: absolute;
+        top: 60px;
+        right: 60px;
     }
 }
-@media screen and (max-width: 1199px) {
-    .content {
-        width: calc(100vw - 80px);
-        padding: 40px;
-    }
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin: 200px 0 200px 20%;
 
-    .lander {
-        color: $accent;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 120px 0;
-        box-sizing: border-box;
-        #landerimg {
-            background-image: url('../img/marvin\ closeup.jpg');
-            background-size: cover;
-            background-position: right;
-            width: 100%;
-            margin-top: 40px;
-            height: 400px;
-        }
-        .text {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            h1 {
-                font-size: 3em;
-                font-weight: 400;
-                margin: 0 0 40px 0;
-                text-indent: -2%;
-            }
-            .p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                b {
-                    font-weight: 700;
-                }
-            }
-        }
+    h2 {
+        font-size: 4em;
+        margin-bottom: 40px;
+        font-family: "Spezia-SemiBold";
     }
-    #donate {
-        margin: 80px 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    p {
         font-size: 1em;
-        color: $dark;
-        a {
-            color: white;
-            background: $accent;
-            padding: 6px 14px;
-            text-decoration: none;
-            margin-right: 10px;
-            font-style: italic;
-        }
+        line-height: 1.5;
+        margin-bottom: 40px;
+        max-width: 800px;
     }
-    #whatistsa {
-        display: flex;
-        flex-direction: column;
-        padding: 120px 40px;
-        color: $bg;
-        background: $accent;
-        margin: 0 -40px;
-        .part1 {
-            width: 100%;
-            margin-right: 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 3em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-            }
-            .button {
-                color: $accent;
-                background: $bg;
-                border: 2px solid $bg;
-                &:hover {
-                    background: none;
-                    color: $bg;
-                }
-            }
+    div {
+        display: inline-block;
+        column-count: 2;
+        width: 80%;
+        margin-bottom: 40px;
+        h3 {
+            font-size: 2em;
+            line-height: 1.25;
         }
-        .part2 {
-            width: 100%;
-            margin-top: 80px;
-            p {
-                width: 100%;
-                text-align: center;
-                font-size: 2em;
-                line-height: 1;
-                margin: 0;
-                line-height: 1.618;
-                b {
-                    font-weight: 700 !important;
-                }
-            }
-        }
-    }
-    #submissions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 3em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                max-width: 800px;
-                text-align: center;
-            }
-    }
-    #activities {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-        .part1 {
-            width: 100%;
-            margin-right: 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 3em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-            }
-        }
-        .part2 {
-            margin-top: 40px;
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-    }
-    #courses {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $accent;
-        padding: 120px 0 40px 0;
-
-            h2 {
-                margin-bottom: 30px;
-                font-size: 3em;
-                margin-top: 0;
-            }
-            p {
-                margin-bottom: 40px;
-                font-size: 1em;
-                line-height: 1.618;
-                max-width: 800px;
-                text-align: center;
-            }
-    }
-    iframe {
-        width: 100vw;
-        height: 450px;
     }
 }

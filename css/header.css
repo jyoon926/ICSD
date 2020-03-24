@@ -3,9 +3,7 @@
     position: fixed;
     height: 80px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -39,7 +37,7 @@
   }
   header div .logo-header {
     font-size: 30px;
-    color: #1C5CDE;
+    color: black;
     font-weight: 450;
     padding: 0 30px;
   }
@@ -56,7 +54,7 @@
             justify-content: flex-end;
   }
   header div #header-links a {
-    color: #1C5CDE;
+    color: black;
     text-decoration: none;
     margin-right: 60px;
     font-size: 1em;
@@ -90,7 +88,7 @@
     height: 80px;
     width: 80px;
     color: white;
-    background: #1C5CDE;
+    background: black;
     text-decoration: none;
     font-size: 1em;
     line-height: 1;
@@ -126,7 +124,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: #D6DDFF;
+    background: white;
     border: 1px solid #232423;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -167,7 +165,7 @@
     text-decoration: none;
     font-size: 1em;
     padding: 18px 30px;
-    background: #D6DDFF;
+    background: white;
     margin-right: 20px;
     border: 1px solid #232423;
   }
@@ -175,8 +173,8 @@
     margin: 0;
   }
   header div #contact .buttons a:hover {
-    border: 1px solid #1C5CDE;
-    background: #1C5CDE;
+    border: 1px solid black;
+    background: black;
     color: white;
   }
   header div #contact #exit {
@@ -184,7 +182,7 @@
     top: 0;
     right: 0;
     padding: 30px;
-    background: #1C5CDE;
+    background: black;
   }
   header div #contact #exit img {
     height: 40px;
@@ -251,7 +249,7 @@
   }
   header div .logo-header {
     font-size: 26px;
-    color: #1C5CDE;
+    color: black;
     font-weight: 450;
     padding: 0 20px;
   }
@@ -270,8 +268,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#D6DDFF), to(#D6DDFF));
-    background: linear-gradient(to bottom, #D6DDFF, #D6DDFF);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background: linear-gradient(to bottom, white, white);
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -297,7 +295,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #1C5CDE;
+    color: black;
   }
   header div #header-links a:last-child {
     border-bottom: none;

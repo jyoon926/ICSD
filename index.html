@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ithaca High School TSA</title>
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
     </head>
-    <body onload="init()">
+    <body>
         <header>
             <div>
                 <input type="checkbox" id="checkbox" class="checkbox">
@@ -28,61 +28,56 @@
                 </div>
             </div>
         </header>
-
-        <div class="content">
-
-            <div class="lander">
-                <div class="text">
-                    <h1>"Learning to lead in a technical world."</h1>
-                    <p class="p"><b>Ithaca High School Technology Student Association</b> is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
-                    <a href="about.html" class="button transition">Learn More</a>
+        <div class="lander" id="lander">
+            <div class="text">
+                <h1>Ithaca High School<br>Technology Student<br>Association</h1>
+                <div id="links">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Submissions</a>
+                    <a href="#">Fundraising</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="contact.html">Contact</a>
                 </div>
-                <div id="landerimg" class="image"></div>
             </div>
-
-            <!--<section id="donate">
-                <p><a href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E130565&id=41" target="none" class="transition">Donate to IHSTSA!</a> Help us send as many of our bright and passionate team members as we can to the conferences!</p>
-            </section>-->
-
-            <section class="section1" id="whatistsa">
-                <div class="part1">
-                    <h2>About TSA</h2>
-                    <p>Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
-                    <a href="https://tsaweb.org/" class="button transition" target="none">Learn More About TSA</a>
-                </div>
-                <div class="part2">
-                    <p><b>250,000+</b> Students</p>
-                    <p><b>2,500+</b> Teachers</p>
-                    <p><b>2,000+</b> Schools</p>
-                    <p><b>48</b> State Delegations</p>
-                    <p><b>4</b> Countries</p>
-                </div>
-            </section>
-
-            <section class="section1" id="activities">
-                <div class="part1">
-                    <h2>Activities & Fundraising</h2>
-                    <p>IHSTSA members put in a lot of work to be able to compete in regional and national conferences. However, expenses are high, as well as material costs. Donating to our TSA team helps us send as many of our bright and passionate team members as we can.</p>
-                    <a href="#" class="button transition">Learn More</a>
-                </div>
-                <div class="part2">
-                    <img class="image" src="img/pig.jpg" alt="">
-                </div>
-            </section>
-            
-            <section class="section1" id="submissions">
-                <h2>Submissions</h2>
-                <p>Each year, there are a few standout event submissions that IHSTSA is especially proud of. This year, the events are Dragster Design and blank. Learn about and what went into the making of each of these submissions, each of which places first at the New York State TSA conference in March.</p>
-                <a href="#" class="button transition">Learn More</a>
-            </section>
-            
-            <section class="section1" id="courses">
-                <h2>IHS Engineering Courses</h2>
-                <p>Ithaca High School wouldn’t be nearly as cool as it is without its technology/engineering department. Without it, the future scientists and engineers studying here wouldn’t be nearly as capable, and IHSTSA’s students would have an extremely difficult time in any event. Luckily, this departments is quite possibly the school’s strongest.</p>
-                <a href="courses.html" class="button transition">Learn More</a>
-            </section>
-            
+            <div id="landerimg" class="image">
+            </div>
+            <div class="buttons">
+                <div class="button1"></div>
+                <div class="button2"></div>
+            </div>
+            <p class="p">IHSTSA is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
         </div>
+        <section class="section1" id="whatistsa">
+            <h2>About TSA</h2>
+            <div class="part2">
+                <h3><b>250,000+</b> Students</h3>
+                <h3><b>2,500+</b> Teachers</h3>
+                <h3><b>2,000+</b> Schools</h3>
+                <h3><b>48</b> State Delegations</h3>
+                <h3><b>4</b> Countries</h3>
+            </div>
+            <p>Technology Student Association (TSA) is a national, non-profit organization of middle and high school students who are engaged in science, technology, engineering, and mathematics (STEM). Since TSA was chartered in 1978, almost 4,000,000 student members have participated through challenging competitions, leadership opportunities, and community service.</p>
+            <a href="https://tsaweb.org/" class="button transition" target="none">Learn More About TSA</a>
+        </section>
+
+        <section class="section1" id="activities">
+            <h2>Activities & Fundraising</h2>
+            <p>IHSTSA members put in a lot of work to be able to compete in regional and national conferences. However, expenses are high, as well as material costs. Donating to our TSA team helps us send as many of our bright and passionate team members as we can.</p>
+            <a href="#" class="button transition">Learn More</a>
+        </section>
+        
+        <section class="section1" id="submissions">
+            <h2>Submissions</h2>
+            <p>Each year, there are a few standout event submissions that IHSTSA is especially proud of. This year, the events are Dragster Design and blank. Learn about and what went into the making of each of these submissions, each of which places first at the New York State TSA conference in March.</p>
+            <a href="#" class="button transition">Learn More</a>
+        </section>
+        
+        <section class="section1" id="courses">
+            <h2>IHS Engineering Courses</h2>
+            <p>Ithaca High School wouldn’t be nearly as cool as it is without its technology/engineering department. Without it, the future scientists and engineers studying here wouldn’t be nearly as capable, and IHSTSA’s students would have an extremely difficult time in any event. Luckily, this departments is quite possibly the school’s strongest.</p>
+            <a href="courses.html" class="button transition">Learn More</a>
+        </section>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.6725914862113!2d-76.50054378454064!3d42.45598187918059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0822b08fd500f%3A0xb86ac8ee67c6b390!2sIthaca%20High%20School!5e0!3m2!1sen!2sus!4v1578764854676!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <footer>
