@@ -2,7 +2,7 @@ window.onscroll = function() {
     scrollFunction()
 };
 var links = document.getElementById("links");
-var offset = links.offsetTop - 60;
+var offset = links.offsetTop - 40;
 function scrollFunction() {
     console.log(document.documentElement.scrollTop);
     if (document.documentElement.scrollTop > offset) {

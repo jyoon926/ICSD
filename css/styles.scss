@@ -41,6 +41,7 @@ body {
     margin: 0;
     padding: 0;
     color: $accent;
+    letter-spacing: -0.04em !important;
 }
 .transition {
     -webkit-transition-duration: .3s;
@@ -59,6 +60,8 @@ body {
 iframe {
     width: 100vw;
     height: 450px;
+    position: relative;
+    z-index: 9999;
 }
 .button {
     color: $bg;
@@ -81,21 +84,20 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $accent;
-    color: $bg;
     padding-bottom: 10px;
     font-size: 14px;
 }
 footer {
+    position: relative;
+    z-index: 9999;
     width: 100%;
     padding: 80px 80px;
     box-sizing: border-box;
-    background: $accent;
-    color: $bg;
+    background: $bg;
+    color: $accent;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
-    z-index: 11;
     .col {
         display: flex;
         flex-direction: column;
@@ -106,15 +108,12 @@ footer {
             margin-bottom: 20px;
         }
         p {
-            color: $bg;
             line-height: 1.618;
         }
         h2 {
-            color: $bg;
             margin: 0 0 20px 0;
         }
         a {
-            color: $bg;
             transition-duration: .4s;
             line-height: 1.618;
             &:hover {
@@ -128,12 +127,11 @@ footer {
         width: 100%;
         padding: 80px 40px;
         box-sizing: border-box;
-        background: $accent;
-        color: $bg;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
-        z-index: 11;
+        position: relative;
+        z-index: 9999;
         .col {
             display: flex;
             flex-direction: column;
@@ -150,7 +148,6 @@ footer {
                 margin: 0 0 20px 0;
             }
             a {
-                color: $bg;
                 transition-duration: .4s;
                 line-height: 1.618;
                 &:hover {
@@ -164,12 +161,11 @@ footer {
     footer {
         width: 100%;
         padding: 80px 40px;
-        background: $accent;
-        color: $bg;
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 11;
+        position: relative;
+        z-index: 9999;
         .col {
             display: flex;
             flex-direction: column;
@@ -187,7 +183,6 @@ footer {
                 margin: 0 0 20px 0;
             }
             a {
-                color: $bg;
                 transition-duration: .4s;
                 line-height: 1.618;
                 &:hover {

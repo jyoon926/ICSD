@@ -39,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
+  letter-spacing: -0.04em !important;
 }
 
 .transition {
@@ -61,6 +62,8 @@ body {
 iframe {
   width: 100vw;
   height: 450px;
+  position: relative;
+  z-index: 9999;
 }
 
 .button {
@@ -101,25 +104,24 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: black;
-  color: white;
   padding-bottom: 10px;
   font-size: 14px;
 }
 
 footer {
+  position: relative;
+  z-index: 9999;
   width: 100%;
   padding: 80px 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 40px;
-  z-index: 11;
 }
 
 footer .col {
@@ -144,17 +146,14 @@ footer .col img {
 }
 
 footer .col p {
-  color: white;
   line-height: 1.618;
 }
 
 footer .col h2 {
-  color: white;
   margin: 0 0 20px 0;
 }
 
 footer .col a {
-  color: white;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
   line-height: 1.618;
@@ -170,14 +169,13 @@ footer .col a:hover {
     padding: 80px 40px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: black;
-    color: white;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
-    z-index: 11;
+    position: relative;
+    z-index: 9999;
   }
   footer .col {
     display: -webkit-box;
@@ -205,7 +203,6 @@ footer .col a:hover {
     margin: 0 0 20px 0;
   }
   footer .col a {
-    color: white;
     -webkit-transition-duration: .4s;
             transition-duration: .4s;
     line-height: 1.618;
@@ -219,8 +216,6 @@ footer .col a:hover {
   footer {
     width: 100%;
     padding: 80px 40px;
-    background: black;
-    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -231,7 +226,8 @@ footer .col a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 11;
+    position: relative;
+    z-index: 9999;
   }
   footer .col {
     display: -webkit-box;
@@ -260,7 +256,6 @@ footer .col a:hover {
     margin: 0 0 20px 0;
   }
   footer .col a {
-    color: white;
     -webkit-transition-duration: .4s;
             transition-duration: .4s;
     line-height: 1.618;

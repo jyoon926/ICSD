@@ -1,9 +1,10 @@
 .lander {
   height: 100vh;
   width: 100%;
-  padding: 60px 60px 0 60px;
+  padding: 40px 40px 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 0;
 }
 
 .lander .text {
@@ -26,7 +27,7 @@
 .lander .text h1 {
   font-size: 3em;
   line-height: 1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-family: "Spezia-SemiBold";
 }
 
@@ -45,13 +46,13 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: static;
-  top: 60px;
-  z-index: 10;
+  top: 40px;
 }
 
 .lander .text #links a {
   color: black;
-  line-height: 1.25;
+  font-size: 2vw;
+  line-height: 1;
 }
 
 .lander #landerimg {
@@ -59,7 +60,7 @@
   background-image: url("../img/tsa image.jpg");
   background-size: cover;
   width: 80%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   position: absolute;
   top: 0;
   right: 0;
@@ -67,7 +68,7 @@
 
 .lander .buttons {
   position: absolute;
-  height: 60px;
+  height: 80px;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +87,7 @@
   right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 .lander .buttons .button1 {
@@ -108,8 +109,9 @@
   z-index: 1;
   width: 400px;
   position: absolute;
-  top: 60px;
-  right: 60px;
+  top: 40px;
+  right: 40px;
+  font-family: "Spezia-SemiBold";
 }
 
 section {
@@ -127,7 +129,7 @@ section {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 80%;
-  margin: 200px 0 200px 20%;
+  margin: 100px 0 100px 20%;
 }
 
 section h2 {
