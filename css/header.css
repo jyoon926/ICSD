@@ -249,7 +249,7 @@
     font-size: 26px;
     color: black;
     font-weight: 450;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   header div #header-links {
     position: fixed;
@@ -278,6 +278,7 @@
             transition-duration: .6s;
     -webkit-transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
             transition-timing-function: cubic-bezier(0.64, 0, 0.31, 1);
+    padding: 100px 0;
   }
   header div #header-links a {
     font-size: 2em;
@@ -320,7 +321,7 @@
   .menu-icon img {
     height: 30px;
     width: 30px;
-    padding: 10px 14px;
+    padding: 10px 30px;
   }
   #checkbox {
     position: fixed;

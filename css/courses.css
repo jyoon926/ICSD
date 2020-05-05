@@ -152,18 +152,20 @@
 
 .section2 .text h3 {
   font-size: 2em;
+  margin-bottom: 6px;
 }
 
 .section2 .text p {
   line-height: 1.618;
   font-size: 1em;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
   .content {
-    width: calc(100vw - 80px);
-    padding: 40px;
+    width: calc(100vw - 60px);
+    padding: 30px;
   }
   .lander {
     color: #1C5CDE;
@@ -278,12 +280,14 @@
     margin: 0 0 40px 0;
   }
   .section2 .text h3 {
-    font-size: 1.75em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
   .section2 .text p {
     line-height: 1.618;
     font-size: 1em;
     margin: 0;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=courses.css.map */

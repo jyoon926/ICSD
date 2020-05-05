@@ -1,6 +1,7 @@
 $bg: white;
-$dark: #232423;
-$accent: black;
+$black: black;
+$accent: #3725d3;
+
 
 /*
 IMPORT FONTS
@@ -40,7 +41,7 @@ body {
     font-weight: 450;
     margin: 0;
     padding: 0;
-    color: $accent;
+    color: $black;
     letter-spacing: -0.04em !important;
 }
 .transition {
@@ -55,7 +56,7 @@ body {
     background: white;
 }
 ::-webkit-scrollbar-thumb {
-    background: $accent;
+    background: $black;
 }
 iframe {
     width: 100vw;
@@ -71,12 +72,10 @@ iframe {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 35px;
-    background: $accent;
-    border: 2px solid $accent;
+    padding: 18px 36px;
+    background: $black;
     &:hover {
-        background: none;
-        color: $accent;
+        background: $accent;
     }
 }
 .bottom {
@@ -94,7 +93,7 @@ footer {
     padding: 80px 80px;
     box-sizing: border-box;
     background: $bg;
-    color: $accent;
+    color: $black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;

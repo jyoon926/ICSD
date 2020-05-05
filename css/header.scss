@@ -175,7 +175,7 @@ $accent: black;
                 font-size: 26px;
                 color: $accent;
                 font-weight: 450;
-                padding: 0 20px;
+                padding: 0 30px;
             }
     
             #header-links {
@@ -193,6 +193,7 @@ $accent: black;
                 opacity: 1;
                 transition-duration: .6s;
                 transition-timing-function: cubic-bezier(.64,0,.31,1);
+                padding: 100px 0;
         
                 a {
                     font-size: 2em;
@@ -232,7 +233,7 @@ $accent: black;
         img {
             height: 30px;
             width: 30px;
-            padding: 10px 14px;
+            padding: 10px 30px;
         }
     }
     #checkbox {

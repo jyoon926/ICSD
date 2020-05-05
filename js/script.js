@@ -1,5 +1,8 @@
 window.onscroll = function() {
-    scrollFunction()
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+        scrollFunction()
+
+    }
 };
 var links = document.getElementById("links");
 var offset = links.offsetTop - 40;

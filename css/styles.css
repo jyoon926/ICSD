@@ -83,14 +83,12 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 35px;
+  padding: 18px 36px;
   background: black;
-  border: 2px solid black;
 }
 
 .button:hover {
-  background: none;
-  color: black;
+  background: #3725d3;
 }
 
 .bottom {

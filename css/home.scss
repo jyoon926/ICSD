@@ -1,6 +1,6 @@
 $bg: white;
-$dark: #232423;
-$accent: black;
+$black: black;
+$accent: #3725d3;
 
 .lander {
     height: 100vh;
@@ -15,7 +15,7 @@ $accent: black;
         justify-content: flex-start;
         z-index: 1;
         h1 {
-            font-size: 3em;
+            font-size: 6vw;
             line-height: 1;
             margin-bottom: 40px;
             font-family: "Spezia-SemiBold";
@@ -28,21 +28,26 @@ $accent: black;
             position: static;
             top: 40px;
             a {
-                color: $accent;
-                font-size: 2vw;
-                line-height: 1;
+                color: $black;
+                font-size: 1em;
+                line-height: 1.5;
+                transition-duration: .4s;
+                &:hover {
+                    color: $accent;
+                }
             }
         }
     }
     #landerimg {
         z-index: -1;
-        background-image: url('../img/tsa\ image.jpg');
+        background-image: url('../img/Unsplash\ Drawing.jpg');
         background-size: cover;
         width: 80%;
         height: calc(100vh - 80px);
         position: absolute;
         top: 0;
         right: 0;
+        opacity: .85;
     }
     .buttons {
         position: absolute;
@@ -59,7 +64,7 @@ $accent: black;
         .button1 {
             height: 8px;
             width: 8px;
-            background: $accent;
+            background: $black;
             margin-right: 30px;
             border: 2px solid black;
         }
@@ -77,6 +82,29 @@ $accent: black;
         top: 40px;
         right: 40px;
         font-family: "Spezia-SemiBold";
+    }
+}
+.students {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    padding: 40px;
+    background: rgba(55, 37, 211, 0.75);
+    backdrop-filter: blur(13px);
+    bottom: 120px;
+    right: 40px;
+    h2 {
+        line-height: 1.15;
+        margin-bottom: 14px;
+        color: white;
+    }
+    p {
+        line-height: 1.5;
+        color: white;
+        b {
+            color: white;
+            text-decoration: underline;
+        }
     }
 }
 section {
@@ -106,6 +134,118 @@ section {
         h3 {
             font-size: 2em;
             line-height: 1.25;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .lander {
+        height: auto;
+        width: 100%;
+        padding: 90px 0 0 0;
+        box-sizing: border-box;
+        z-index: 0;
+        .text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            h1 {
+                text-align: center;
+                font-size: 9vw;
+                line-height: 1;
+                margin-bottom: 40px;
+                font-family: "Spezia-SemiBold";
+            }
+            #links {
+                display: none;
+            }
+        }
+        #landerimg {
+            z-index: -1;
+            background-image: url('../img/Unsplash\ Drawing.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            position: static;
+            top: auto;
+            bottom: 80px;
+            right: 0;
+            opacity: .85;
+        }
+        .buttons {
+            position: static;
+            height: 80px;
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            bottom: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 0 40px;
+            .button1 {
+                height: 8px;
+                width: 8px;
+                background: $black;
+                margin-right: 30px;
+                border: 2px solid black;
+            }
+            .button2 {
+                height: 8px;
+                width: 8px;
+                background: none;
+                border: 2px solid black;
+            }
+        }
+        .p {
+            z-index: 1;
+            width: 100%;
+            position: static;
+            text-align: center;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 40px;
+            padding-top: 0;
+            box-sizing: border-box;
+            font-family: "Spezia-SemiBold";
+        }
+    }
+    .students {
+        display: none;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: calc(100vw - 60px);
+        margin: 100px 30px;
+    
+        h2 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            font-family: "Spezia-SemiBold";
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+        div {
+            display: inline-block;
+            column-count: 1;
+            width: 80%;
+            margin-bottom: 40px;
+            h3 {
+                font-size: 1.5em;
+                line-height: 1.1;
+                padding-bottom: 14px;
+            }
         }
     }
 }
