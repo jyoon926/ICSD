@@ -1,3 +1,28 @@
+//Loader
+window.onload = function load() {
+}
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    document.getElementById('loader').style.top = "-100vh";
+    document.getElementsByTagName('html')[0].style.overflowY = "scroll";
+});
+
+//Sidebar Links
 window.onscroll = function() {
     if (window.matchMedia("(min-width: 1200px)").matches) {
         scrollFunction()
@@ -27,4 +52,9 @@ function set(n) {
             document.getElementById("button" + i).classList.remove("selected");
         }
     }
+}
+
+//Back
+function goBack() {
+    window.history.back()
 }

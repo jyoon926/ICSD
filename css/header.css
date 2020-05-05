@@ -87,7 +87,7 @@
     padding: 0 60px;
     height: 80px;
     width: 80px;
-    color: #e6e9ff;
+    color: white;
     background: black;
     text-decoration: none;
     font-size: 1em;
@@ -124,7 +124,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: #e6e9ff;
+    background: white;
     border: 1px solid #232423;
     opacity: 0;
     -webkit-transform: scale(0);
@@ -165,7 +165,7 @@
     text-decoration: none;
     font-size: 1em;
     padding: 18px 30px;
-    background: #e6e9ff;
+    background: white;
     margin-right: 20px;
     border: 1px solid #232423;
   }
@@ -175,7 +175,7 @@
   header div #contact .buttons a:hover {
     border: 1px solid black;
     background: black;
-    color: #e6e9ff;
+    color: white;
   }
   header div #contact #exit {
     position: fixed;
@@ -212,7 +212,7 @@
     position: fixed;
     height: 50px;
     top: 0;
-    background: #e6e9ff;
+    background: white;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -266,8 +266,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#e6e9ff), to(#e6e9ff));
-    background: linear-gradient(to bottom, #e6e9ff, #e6e9ff);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background: linear-gradient(to bottom, white, white);
     height: 100vh;
     width: 100vw;
     top: 0;

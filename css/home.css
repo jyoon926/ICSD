@@ -52,7 +52,7 @@
 .lander .text #links a {
   color: black;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.618;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
 }
@@ -141,7 +141,7 @@
   width: 400px;
   text-align: center;
   padding: 40px;
-  background: rgba(55, 37, 211, 0.75);
+  background: rgba(55, 37, 211, 0.65);
   -webkit-backdrop-filter: blur(13px);
           backdrop-filter: blur(13px);
   bottom: 120px;
@@ -151,16 +151,16 @@
 .students h2 {
   line-height: 1.15;
   margin-bottom: 14px;
-  color: #e6e9ff;
+  color: white;
 }
 
 .students p {
   line-height: 1.5;
-  color: #e6e9ff;
+  color: white;
 }
 
 .students p b {
-  color: #e6e9ff;
+  color: white;
   text-decoration: underline;
 }
 

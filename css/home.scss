@@ -1,4 +1,4 @@
-$bg: #e6e9ff;
+$bg: white;
 $black: black;
 $accent: #3725d3;
 
@@ -30,7 +30,7 @@ $accent: #3725d3;
             a {
                 color: $black;
                 font-size: 1em;
-                line-height: 1.5;
+                line-height: 1.618;
                 transition-duration: .4s;
                 &:hover {
                     color: $accent;
@@ -98,7 +98,7 @@ $accent: #3725d3;
     width: 400px;
     text-align: center;
     padding: 40px;
-    background: rgba(55, 37, 211, 0.75);
+    background: rgba(55, 37, 211, 0.65);
     backdrop-filter: blur(13px);
     bottom: 120px;
     right: 40px;
