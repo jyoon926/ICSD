@@ -4,7 +4,7 @@
 }
 
 .lander {
-  color: #1C5CDE;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,12 +55,12 @@
 
 .lander form .textbox {
   background: rgba(255, 255, 255, 0);
-  color: #1C5CDE;
+  color: black;
   font-size: 1em;
   padding: 12px 0;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #1C5CDE;
+  border-bottom: 2px solid black;
   border-radius: 0;
   outline: none;
   margin-bottom: 40px;
@@ -72,19 +72,19 @@
 }
 
 .lander form .textbox::-webkit-input-placeholder {
-  color: #1C5CDE;
+  color: black;
 }
 
 .lander form .textbox:-ms-input-placeholder {
-  color: #1C5CDE;
+  color: black;
 }
 
 .lander form .textbox::-ms-input-placeholder {
-  color: #1C5CDE;
+  color: black;
 }
 
 .lander form .textbox::placeholder {
-  color: #1C5CDE;
+  color: black;
 }
 
 .lander form textarea {
@@ -97,26 +97,16 @@
 }
 
 .lander form .send {
-  color: #D6DDFF;
+  color: white;
   font-size: 1em;
   text-decoration: none;
-  padding: 14px 35px;
-  background: #1C5CDE;
-  border: 2px solid #1C5CDE;
-  border-radius: 0 10px 0 10px;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-}
-
-.lander form .send:hover {
-  background: none;
-  color: #1C5CDE;
+  border: none;
 }
 
 @media screen and (max-width: 1199px) {
   .content {
-    width: calc(100vw - 80px);
-    padding: 40px;
+    width: calc(100vw - 60px);
+    padding: 30px;
   }
   .lander h1 {
     font-size: 4em;

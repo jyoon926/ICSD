@@ -1,13 +1,13 @@
 $bg: #D6DDFF;
-$dark: #232423;
-$accent: #1C5CDE;
+$black: black;
+$accent: #3725d3;
 .content {
     width: calc(100vw - 160px);
     padding: 80px 80px 0 80px;
 }
 
 .lander {
-    color: $accent;
+    color: $black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,12 +35,12 @@ $accent: #1C5CDE;
         align-items: flex-start;
         .textbox {
             background: rgba(255,255,255,0);
-            color: $accent;
+            color: $black;
             font-size: 1em;
             padding: 12px 0;
             width: 100%;
             border: 0; 
-            border-bottom: 2px solid $accent;
+            border-bottom: 2px solid $black;
             border-radius: 0;
             outline: none;
             margin-bottom: 40px;
@@ -49,7 +49,7 @@ $accent: #1C5CDE;
                 margin-bottom: 37px;
             }
             &::placeholder {
-                color: $accent;
+                color: $black;
             }
         }
         textarea {
@@ -60,25 +60,17 @@ $accent: #1C5CDE;
             }
         }
         .send {
-            color: $bg;
+            color: white;
             font-size: 1em;
             text-decoration: none;
-            padding: 14px 35px;
-            background: $accent;
-            border: 2px solid $accent;
-            border-radius: 0 10px 0 10px;
-            transition-duration: .3s;
-            &:hover {
-                background: none;
-                color: $accent;
-            }
+            border: none;
         }
     }
 }
 @media screen and (max-width: 1199px) {
     .content {
-        width: calc(100vw - 80px);
-        padding: 40px;
+        width: calc(100vw - 60px);
+        padding: 30px;
     }
     .lander h1 {
         font-size: 4em;

@@ -85,10 +85,13 @@ iframe {
           align-items: center;
   padding: 18px 36px;
   background: black;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
 }
 
 .button:hover {
   background: #3725d3;
+  cursor: pointer;
 }
 
 .bottom {

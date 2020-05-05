@@ -4,7 +4,7 @@
 }
 
 .lander {
-  color: #1C5CDE;
+  color: #3725d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +84,7 @@
 }
 
 .section .text {
-  color: #1C5CDE;
+  color: #3725d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +137,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #1C5CDE;
+  color: #3725d3;
   text-align: center;
 }
 
@@ -168,7 +168,7 @@
     padding: 30px;
   }
   .lander {
-    color: #1C5CDE;
+    color: #3725d3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -239,7 +239,7 @@
     padding: 120px 0 0px 0;
   }
   .section .text {
-    color: #1C5CDE;
+    color: #3725d3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
