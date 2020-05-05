@@ -194,7 +194,7 @@ $accent: black;
                 transition-duration: .6s;
                 transition-timing-function: cubic-bezier(.64,0,.31,1);
                 padding: 100px 0;
-        
+                box-sizing: border-box;
                 a {
                     font-size: 2em;
                     width: 100%;
