@@ -61,16 +61,23 @@
   color: #3725d3;
 }
 
-.lander #landerimg {
+.lander .image {
   z-index: -1;
-  background-image: url("../img/Unsplash Drawing.jpg");
   background-size: cover;
   width: 80%;
   height: calc(100vh - 80px);
   position: absolute;
   top: 0;
   right: 0;
-  opacity: .85;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  opacity: 0;
+  -webkit-filter: opacity(0.75);
+          filter: opacity(0.75);
+}
+
+.lander #landerimg0 {
+  opacity: 1;
 }
 
 .lander .buttons {
@@ -97,19 +104,27 @@
   padding: 0 40px;
 }
 
-.lander .buttons .button1 {
-  height: 8px;
-  width: 8px;
-  background: black;
-  margin-right: 30px;
-  border: 2px solid black;
-}
-
-.lander .buttons .button2 {
+.lander .buttons div {
   height: 8px;
   width: 8px;
   background: none;
   border: 2px solid black;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  margin-right: 30px;
+}
+
+.lander .buttons div:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.lander .buttons div:last-child {
+  margin-right: 0;
+}
+
+.lander .buttons .selected {
+  background: black;
 }
 
 .lander .p {
@@ -136,16 +151,16 @@
 .students h2 {
   line-height: 1.15;
   margin-bottom: 14px;
-  color: white;
+  color: #e6e9ff;
 }
 
 .students p {
   line-height: 1.5;
-  color: white;
+  color: #e6e9ff;
 }
 
 .students p b {
-  color: white;
+  color: #e6e9ff;
   text-decoration: underline;
 }
 
@@ -228,17 +243,36 @@ section div h3 {
   .lander .text #links {
     display: none;
   }
-  .lander #landerimg {
+  .lander .image {
     z-index: -1;
-    background-image: url("../img/Unsplash Drawing.jpg");
     background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 400px;
-    position: static;
-    top: auto;
+    position: relative;
+    top: 0px;
     bottom: 80px;
     right: 0;
-    opacity: .85;
+    opacity: 0;
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  .lander #landerimg0 {
+    opacity: 1;
+    top: 0px;
+  }
+  .lander #landerimg1 {
+    top: -400px;
+  }
+  .lander #landerimg2 {
+    top: -800px;
+  }
+  .lander #landerimg3 {
+    top: -1200px;
+  }
+  .lander #landerimg4 {
+    top: -1600px;
+    margin-bottom: -1600px;
   }
   .lander .buttons {
     position: static;

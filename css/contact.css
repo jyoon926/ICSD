@@ -53,11 +53,15 @@
           align-items: flex-start;
 }
 
+.lander form p {
+  margin-bottom: 14px;
+}
+
 .lander form .textbox {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(55, 37, 211, 0.15);
   color: black;
   font-size: 1em;
-  padding: 12px 0;
+  padding: 16px;
   width: 100%;
   border: 0;
   border-bottom: 2px solid black;
@@ -97,10 +101,20 @@
 }
 
 .lander form .send {
-  color: white;
+  color: #e6e9ff;
   font-size: 1em;
   text-decoration: none;
   border: none;
+}
+
+.lander h2 {
+  font-size: 1.5em;
+  margin: 60px 0 40px 0;
+}
+
+.lander h2 a {
+  color: #3725d3;
+  border-bottom: 2px solid #3725d3;
 }
 
 @media screen and (max-width: 1199px) {

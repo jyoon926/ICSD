@@ -1,4 +1,4 @@
-$bg: #D6DDFF;
+$bg: #e6e9ff;
 $black: black;
 $accent: #3725d3;
 .content {
@@ -16,7 +16,7 @@ $accent: #3725d3;
     height: calc(100vh - 80px);
     box-sizing: border-box;
     #landerimg {
-        background-image: url('../img/submissions.jpg');
+        background-image: url('../img/Unsplash\ Drawing.jpg');
         background-size: cover;
         background-position: center;
         width: calc(50% - 80px);
@@ -156,7 +156,7 @@ $accent: #3725d3;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             width: 100%;
             max-width: 1000px;
             text-align: left;

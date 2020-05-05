@@ -41,11 +41,23 @@
                 </div>
             </div>
             <p class="p">IHSTSA is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to complete great projects.</p>
-            <div id="landerimg" class="image">
-            </div>
+            <div id="landerimg0" class="image"></div>
+            <div id="landerimg1" class="image"></div>
+            <div id="landerimg2" class="image"></div>
+            <div id="landerimg3" class="image"></div>
+            <div id="landerimg4" class="image"></div>
+            <script>
+                n = 5;
+                for (i = 0; i < n; i++) {
+                    document.getElementById("landerimg" + i).style.backgroundImage = "url('../img/lander" + i + ".jpg')";
+                }
+            </script>
             <div class="buttons">
-                <div class="button1"></div>
-                <div class="button2"></div>
+                <div class="selected" id="button0" onclick="set(0)"></div>
+                <div id="button1" onclick="set(1)"></div>
+                <div id="button2" onclick="set(2)"></div>
+                <div id="button3" onclick="set(3)"></div>
+                <div id="button4" onclick="set(4)"></div>
             </div>
         </div>
         <div class="students">
@@ -104,8 +116,8 @@
             </div>
             <div class="col">
                 <h2>Contact</h2>
-                <a href="mailto:contact@ihstsa.us">contact@ihstsa.us</a>
                 <a href="contact.html">Contact Page</a>
+                <a href="mailto:contact@ihstsa.us">contact@ihstsa.us</a>
             </div>
         </footer>
         <div class="bottom">Copyright © 2020 IHSTSA</div>

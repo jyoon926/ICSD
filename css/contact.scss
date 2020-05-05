@@ -1,6 +1,6 @@
-$bg: #D6DDFF;
+$bg: #e6e9ff;
 $black: black;
-$accent: #3725d3;
+$accent: rgb(55, 37, 211);
 .content {
     width: calc(100vw - 160px);
     padding: 80px 80px 0 80px;
@@ -33,11 +33,14 @@ $accent: #3725d3;
         width: 100%;
         max-width: 1000px;
         align-items: flex-start;
+        p {
+            margin-bottom: 14px;
+        }
         .textbox {
-            background: rgba(255,255,255,0);
+            background: rgba(55, 37, 211, .15);
             color: $black;
             font-size: 1em;
-            padding: 12px 0;
+            padding: 16px;
             width: 100%;
             border: 0; 
             border-bottom: 2px solid $black;
@@ -60,10 +63,18 @@ $accent: #3725d3;
             }
         }
         .send {
-            color: white;
+            color: $bg;
             font-size: 1em;
             text-decoration: none;
             border: none;
+        }
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 60px 0 40px 0;
+        a {
+            color: $accent;
+            border-bottom: 2px solid $accent;
         }
     }
 }

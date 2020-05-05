@@ -1,4 +1,4 @@
-$bg: white;
+$bg: #e6e9ff;
 $dark: #232423;
 $accent: black;
 @media screen and (min-width: 1050px) {
@@ -57,7 +57,7 @@ $accent: black;
                 padding: 0 60px;
                 height: 80px;
                 width: 80px;
-                color: white;
+                color: $bg;
                 background: $accent;
                 text-decoration: none;
                 font-size: 1em;
@@ -115,7 +115,7 @@ $accent: black;
                         &:hover {
                             border: 1px solid $accent;
                             background: $accent;
-                            color: white;
+                            color: $bg;
                         }
                     }
                 }
@@ -156,7 +156,7 @@ $accent: black;
         position: fixed;
         height: 50px;
         top: 0;
-        background: white;
+        background: $bg;
         width: 100%;
         display: flex;
         flex-direction: row;

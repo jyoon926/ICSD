@@ -14,3 +14,17 @@ function scrollFunction() {
         links.style.position = "static";
     }
 }
+
+//Image slider
+function set(n) {
+    for (i = 0; i < 5; i++) {
+        if (i == n) {
+            document.getElementById("landerimg" + i).style.opacity = "1";
+            document.getElementById("button" + i).classList.add("selected");
+        }
+        else {
+            document.getElementById("landerimg" + i).style.opacity = "0";
+            document.getElementById("button" + i).classList.remove("selected");
+        }
+    }
+}

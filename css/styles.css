@@ -18,12 +18,12 @@ IMPORT FONTS
 }
 
 html {
-  background: white;
+  background: #e6e9ff;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
   width: 10px;
-  background: white;
+  background: #e6e9ff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -67,7 +67,7 @@ iframe {
 }
 
 .button {
-  color: white;
+  color: #e6e9ff;
   font-size: 1em;
   text-decoration: none;
   display: -webkit-box;
@@ -116,7 +116,7 @@ footer {
   padding: 80px 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: white;
+  background: #e6e9ff;
   color: black;
   display: -ms-grid;
   display: grid;
