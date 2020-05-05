@@ -324,7 +324,7 @@ footer .col a:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     position: relative;
-    z-index: 9999;
+    z-index: 97;
   }
   footer .col {
     display: -webkit-box;
@@ -376,7 +376,7 @@ footer .col a:hover {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    z-index: 9999;
+    z-index: 97;
   }
   footer .col {
     display: -webkit-box;
