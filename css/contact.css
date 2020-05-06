@@ -58,12 +58,13 @@
 }
 
 .lander form .textbox {
-  background: rgba(55, 37, 211, 0.15);
+  background: rgba(0, 0, 0, 0.1);
   color: black;
   font-size: 1em;
   padding: 16px;
   width: 100%;
   border: 0;
+  border: 2px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid black;
   border-radius: 0;
   outline: none;
@@ -71,8 +72,7 @@
 }
 
 .lander form .textbox:focus {
-  border-width: 5px;
-  margin-bottom: 37px;
+  border: 2px solid black;
 }
 
 .lander form .textbox::-webkit-input-placeholder {

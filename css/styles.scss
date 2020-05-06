@@ -123,6 +123,11 @@ iframe {
         color: $accent;
     }
 }
+@media screen and (max-width: 1199px) {
+    #back {
+        display: none;
+    }
+}
 .button {
     color: $bg;
     font-size: 1em;

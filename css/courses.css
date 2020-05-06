@@ -55,8 +55,11 @@
   margin: 0 0 40px 0;
 }
 
+.lander .text h2 {
+  margin-bottom: 10px;
+}
+
 .lander .text .p {
-  margin-bottom: 40px;
   font-size: 1em;
   line-height: 1.618;
 }
@@ -182,7 +185,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 120px 0 40px 0;
+    padding: 160px 0 40px 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: auto;

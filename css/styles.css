@@ -218,6 +218,12 @@ iframe {
   color: #3725d3;
 }
 
+@media screen and (max-width: 1199px) {
+  #back {
+    display: none;
+  }
+}
+
 .button {
   color: white;
   font-size: 1em;
