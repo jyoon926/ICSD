@@ -110,7 +110,7 @@ iframe {
   height: 400vh;
   -webkit-animation: grain 0.2s steps(10) infinite;
           animation: grain 0.2s steps(10) infinite;
-  opacity: .2;
+  opacity: .11;
   background-image: url("../img/noise300x300.png");
   background-size: 300px 300px;
   background-repeat: repeat;
