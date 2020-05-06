@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Courses | Ithaca High School TSA</title>
@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/logo_icon.png" />
     </head>
-    <body onload="init()">
-        <div id="grain"></div>
+    <body>
+        <canvas id="canvas"></canvas>
         <div id="loader">
             <img src="img/logo_header.svg" alt="">
         </div>
-
+        
         <header>
             <div>
                 <input type="checkbox" id="checkbox" class="checkbox">
@@ -33,55 +33,60 @@
                 </div>
             </div>
         </header>
-
-        <a href="/" id="back">&#8592; Back to home</a>
-
-        <div class="content">
-
-            <div class="lander">
-                <div class="text">
-                    <h2>IHS Engineering Courses</h2>
-                    <h1>Project Lead The Way (PLTW)</h1>
-                    <p class="p"><b>Project Lead The Way</b> is a four-year track consisting of five engineering courses at Ithaca High School that provides transformative learning experiences for high school students and teachers across the US. With engaging, hands-on classroom environments, great teachers empower students to develop in-demand knowledge and skills they need to thrive.</p>
-                </div>
-                <div id="landerimg" class="image"></div>
+        <div class="lander" id="lander">
+            <div id="links">
+                <a href="/">Home</a>
+                <a href="about">About</a>
+                <a href="submissions">Submissions</a>
+                <a href="fundraising">Fundraising</a>
+                <a href="courses">Courses</a>
+                <a href="contact">Contact</a>
             </div>
-            
-            <section class="section">
-                <div class="text">
-                    <h2>Building a Strong Foundation for College and Career</h2>
-                    <p>Each PLTW Engineering course engages students in interdisciplinary activities like working with a client to design a home, programming electronic devices or robotic arms, or exploring algae as a biofuel source. These activities not only build knowledge and skills in engineering, but also empower students to develop essential skills such as problem solving, critical and creative thinking, communication, collaboration, and perseverance.</p>
-                </div>
-            </section>
-            
-            <section class="section2">
-                <div class="text">
-                    <h2>Courses</h2>
-
-                    <h3>Design and Drawing for Production (DDP)</h3>
-                    <p>The first course in the PLTW sequence is Design and Drawing for Production. Students dig deep into the engineering design process, applying math, science, and engineering standards to hands-on projects like designing a new toy or improving an existing product.</p>
-
-                    <h3>Computer Integrated Manufacturing (CIM)</h3>
-                    <p>The second course is Computer Integrated Manufacturing. In CIM, students discover and explore manufacturing processes, product design, robotics, and automation, and then they apply what they have learned to design solutions for real-world manufacturing problems. </p>
-
-                    <h3>Principles of Engineering (POE)</h3>
-                    <p>The third course is Principles of Engineering. In POE, students explore a broad range of engineering topics including mechanisms, strength of structure and materials, and automation, and then they apply what they know to take on challenges like designing a self-powered car.</p>
-
-                    <h3>Digital Electronics (DE)</h3>
-                    <p>Taken concurrently with POE, the fourth course is Digital Electronics. In DE, students explore the foundations of computing by engaging in circuit design processes to create combinational logic and sequential logic (memory) as electrical engineers do in industry.</p>
-
-                    <h3>Engineering Design and Development (EDD)</h3>
-                    <p>The fifth and final course offered in the Project Lead the Way sequence is Engineering Design and Development (EDD). Students identify a real-world challenge and then research, design, and test a solution, ultimately presenting their unique solutions to a panel of engineers. </p>
-                </div>
-            </section>
-
-            <section class="section">
-                <div class="text">
-                    <h3>PLTW Engineering empowers students to step into the role of an engineer, adopt a problem-solving mindset, and make the leap from dreamers to doers. The program's courses engage students in compelling, real-world challenges that help them become better collaborators and thinkers. Students take from the courses in-demand knowledge and skills they will use in high school and for the rest of their lives, on any career path they take.</h3>
-                </div>
-            </section>
-
         </div>
+        
+        <section class="top">
+            <div class="text">
+                <h2>IHS Engineering Courses</h2>
+                <h1>Project Lead The Way (PLTW)</h1>
+                <p class="p"><b>Project Lead The Way</b> is a four-year track consisting of five engineering courses at Ithaca High School that provides transformative learning experiences for high school students and teachers across the US. With engaging, hands-on classroom environments, great teachers empower students to develop in-demand knowledge and skills they need to thrive.</p>
+            </div>
+        </section>
+
+        <div class="banner"></div>
+        
+        <section class="section">
+            <div class="text">
+                <h2>Building a Strong Foundation for College and Career</h2>
+                <p>Each PLTW Engineering course engages students in interdisciplinary activities like working with a client to design a home, programming electronic devices or robotic arms, or exploring algae as a biofuel source. These activities not only build knowledge and skills in engineering, but also empower students to develop essential skills such as problem solving, critical and creative thinking, communication, collaboration, and perseverance.</p>
+            </div>
+        </section>
+        
+        <section class="section2">
+            <div class="text">
+                <h2>Courses</h2>
+
+                <h3>Design and Drawing for Production (DDP)</h3>
+                <p>The first course in the PLTW sequence is Design and Drawing for Production. Students dig deep into the engineering design process, applying math, science, and engineering standards to hands-on projects like designing a new toy or improving an existing product.</p>
+
+                <h3>Computer Integrated Manufacturing (CIM)</h3>
+                <p>The second course is Computer Integrated Manufacturing. In CIM, students discover and explore manufacturing processes, product design, robotics, and automation, and then they apply what they have learned to design solutions for real-world manufacturing problems. </p>
+
+                <h3>Principles of Engineering (POE)</h3>
+                <p>The third course is Principles of Engineering. In POE, students explore a broad range of engineering topics including mechanisms, strength of structure and materials, and automation, and then they apply what they know to take on challenges like designing a self-powered car.</p>
+
+                <h3>Digital Electronics (DE)</h3>
+                <p>Taken concurrently with POE, the fourth course is Digital Electronics. In DE, students explore the foundations of computing by engaging in circuit design processes to create combinational logic and sequential logic (memory) as electrical engineers do in industry.</p>
+
+                <h3>Engineering Design and Development (EDD)</h3>
+                <p>The fifth and final course offered in the Project Lead the Way sequence is Engineering Design and Development (EDD). Students identify a real-world challenge and then research, design, and test a solution, ultimately presenting their unique solutions to a panel of engineers. </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="text">
+                <h3>PLTW Engineering empowers students to step into the role of an engineer, adopt a problem-solving mindset, and make the leap from dreamers to doers. The program's courses engage students in compelling, real-world challenges that help them become better collaborators and thinkers. Students take from the courses in-demand knowledge and skills they will use in high school and for the rest of their lives, on any career path they take.</h3>
+            </div>
+        </section>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.6725914862113!2d-76.50054378454064!3d42.45598187918059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0822b08fd500f%3A0xb86ac8ee67c6b390!2sIthaca%20High%20School!5e0!3m2!1sen!2sus!4v1578764854676!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         

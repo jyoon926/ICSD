@@ -90,31 +90,14 @@ iframe {
         height: 60px;
     }
 }
-#grain {
+#canvas {
     pointer-events: none;
     position: fixed;
-    top: -100vh; left: -100vw;
-    width: 400vw; height: 400vh;
-    animation: grain .2s steps(10) infinite;
-    opacity: .11;
-    background-image: url('../img/noise300x300.png');
-    background-size: 300px 300px;
-    background-repeat: repeat;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    opacity: .12;
     z-index: 100;
     image-rendering: pixelated;
-    display: none;
-}
-@keyframes grain {
-    0%, 100% { transform:translate(0vw, 0) }
-    10% { transform:translate(-5vw, -10vh) }
-    20% { transform:translate(-15vw, 5vh) }
-    30% { transform:translate(7vw, -25vh) }
-    40% { transform:translate(-5vw, 25vh) }
-    50% { transform:translate(-15vw, 10vh) }
-    60% { transform:translate(15vw, 0vh) }
-    70% { transform:translate(0vw, 15vh) }
-    80% { transform:translate(3vw, 25vh) }
-    90% { transform:translate(-10vw, 10vh) }
 }
 #back {
     position: absolute;

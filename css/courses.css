@@ -1,39 +1,95 @@
-.content {
-  width: calc(100vw - 160px);
-  padding: 80px;
-}
-
 .lander {
-  color: #3725d3;
+  height: 100vh;
+  width: 20%;
+  padding: 40px 40px 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 80px 0;
-  height: calc(100vh - 80px);
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lander #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: static;
+  top: 40px;
+}
+
+.lander #links a {
+  color: black;
+  font-size: 1em;
+  line-height: 1.618;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.lander #links a:hover {
+  color: #3725d3;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  margin: 160px 0 160px 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-right: 80px;
 }
 
-.lander #landerimg {
-  background-image: url("../img/Unsplash Drawing.jpg");
-  background-size: cover;
-  background-position: center;
-  width: calc(50% - 80px);
-  height: calc(100vh - 80px - 80px - 80px);
+.top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 200px 0 200px 20%;
 }
 
-.lander .text {
-  width: 50%;
+.top .text {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,27 +105,38 @@
           align-items: flex-start;
 }
 
-.lander .text h1 {
-  font-size: 4.5vw;
+.top .text h1 {
+  font-size: 6vw;
   font-weight: 400;
   margin: 0 0 40px 0;
 }
 
-.lander .text h2 {
+.top .text h2 {
   margin-bottom: 10px;
 }
 
-.lander .text .p {
-  font-size: 1em;
+.top .text .p {
+  font-size: 1.5em;
   line-height: 1.618;
+  width: 80%;
+  margin-left: 20%;
 }
 
-.lander .text .p b {
+.top .text .p b {
   font-weight: 700;
 }
 
+.banner {
+  width: calc(80% - 80px);
+  margin-left: 20%;
+  height: 30vw;
+  background: url(../img/PLTW.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
 .section {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,10 +147,9 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 120px 0 0px 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .section .text {
@@ -98,16 +164,16 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   max-width: 1000px;
-  text-align: center;
+  text-align: left;
 }
 
 .section .text h2 {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0 0 40px 0;
 }
 
@@ -124,26 +190,6 @@
   margin-bottom: 40px;
 }
 
-.section2 {
-  padding: 120px 0 0 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #3725d3;
-  text-align: center;
-}
-
 .section2 .text {
   max-width: 1000px;
 }
@@ -155,23 +201,52 @@
 
 .section2 .text h3 {
   font-size: 2em;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
 }
 
 .section2 .text p {
   line-height: 1.618;
   font-size: 1em;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1199px) {
-  .content {
-    width: calc(100vw - 60px);
-    padding: 30px;
-  }
+@media screen and (max-width: 1200px) {
   .lander {
-    color: #3725d3;
+    display: none;
+  }
+  section {
+    width: calc(100vw - 160px);
+    margin: 160px 80px;
+    padding: 0;
+  }
+  .top {
+    margin: 200px 80px;
+  }
+  .banner {
+    width: calc(100% - 160px);
+    margin-left: 80px;
+    height: 30vw;
+  }
+  .top .row2 {
+    padding-right: 0;
+  }
+  .top .text h1 {
+    font-size: 7vw;
+  }
+  .top .text p {
+    font-size: 1.3em;
+  }
+  .section2 .col:last-child {
+    padding-right: 0;
+  }
+  .section3 {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -179,118 +254,55 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 160px 0 40px 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    height: auto;
-  }
-  .lander #landerimg {
-    width: 100%;
-    margin-top: 40px;
-    height: 400px;
-  }
-  .lander .text {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: calc(100vw - 60px);
+    margin: 160px 30px;
   }
-  .lander .text h1 {
+  .top {
+    margin: 200px 30px;
+  }
+  .top .text h1 {
     font-size: 3em;
     font-weight: 400;
     margin: 0 0 40px 0;
   }
-  .lander .text .p {
-    margin-bottom: 40px;
-    font-size: 1em;
-    line-height: 1.618;
+  .top .text h2 {
+    margin-bottom: 10px;
   }
-  .lander .text .p b {
-    font-weight: 700;
-  }
-  .section {
+  .top .text .p {
+    font-size: 1.25em;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 120px 0 0px 0;
+    margin-left: 0;
   }
-  .section .text {
-    color: #3725d3;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 100%;
-    max-width: 1000px;
-    text-align: left;
+  .banner {
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    height: 40vw;
   }
   .section .text h2 {
     font-size: 2em;
-    margin: 0 0 40px 0;
-  }
-  .section .text p {
-    line-height: 1.618;
-    font-size: 1em;
-    margin: 0;
-  }
-  .section .text h3 {
-    font-size: 1.25em;
-    line-height: 1.618;
-    margin: 0;
-    margin-bottom: 120px;
   }
   .section2 .text {
-    text-align: left;
+    max-width: 1000px;
   }
   .section2 .text h2 {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 0 40px 0;
   }
   .section2 .text h3 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   .section2 .text p {
     line-height: 1.618;
     font-size: 1em;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=courses.css.map */
