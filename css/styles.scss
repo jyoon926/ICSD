@@ -102,6 +102,7 @@ iframe {
     background-repeat: repeat;
     z-index: 100;
     image-rendering: pixelated;
+    display: none;
 }
 @keyframes grain {
     0%, 100% { transform:translate(0vw, 0) }

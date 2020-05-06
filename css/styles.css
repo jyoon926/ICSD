@@ -120,6 +120,7 @@ iframe {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
+  display: none;
 }
 
 @-webkit-keyframes grain {
