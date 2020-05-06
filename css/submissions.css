@@ -106,9 +106,9 @@ section {
 }
 
 .top .text h1 {
-  font-size: 6vw;
+  font-size: 8em;
   font-weight: 400;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
   line-height: 1;
 }
 
@@ -117,8 +117,8 @@ section {
 }
 
 .top .text .p {
-  font-size: 1.5em;
-  line-height: 1.618;
+  font-size: 2em;
+  line-height: 1.5;
   width: 80%;
   margin-left: 20%;
 }
@@ -130,11 +130,7 @@ section {
 .banner {
   width: calc(80% - 80px);
   margin-left: 20%;
-  height: 30vw;
-  background: url(../img/PLTW.jpg);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  padding: 0;
 }
 
 .section {
@@ -151,6 +147,7 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 60px;
 }
 
 .section .text {
@@ -191,6 +188,10 @@ section {
   margin-bottom: 40px;
 }
 
+.big .text p {
+  font-size: 1.2em;
+}
+
 .section2 .text {
   max-width: 1000px;
 }
@@ -227,16 +228,15 @@ section {
   .banner {
     width: calc(100% - 160px);
     margin-left: 80px;
-    height: 30vw;
   }
   .top .row2 {
     padding-right: 0;
   }
   .top .text h1 {
-    font-size: 7vw;
+    font-size: 6em;
   }
   .top .text p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .section2 .col:last-child {
     padding-right: 0;
@@ -268,7 +268,7 @@ section {
     margin: 200px 30px;
   }
   .top .text h1 {
-    font-size: 3em;
+    font-size: 13vw;
     font-weight: 400;
     margin: 0 0 40px 0;
   }
@@ -276,14 +276,13 @@ section {
     margin-bottom: 10px;
   }
   .top .text .p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     width: 100%;
     margin-left: 0;
   }
   .banner {
     width: calc(100% - 60px);
     margin-left: 30px;
-    height: 40vw;
   }
   .section .text h2 {
     font-size: 2em;
@@ -306,4 +305,4 @@ section {
     margin-bottom: 40px;
   }
 }
-/*# sourceMappingURL=courses.css.map */
+/*# sourceMappingURL=submissions.css.map */

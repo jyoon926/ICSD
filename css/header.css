@@ -1,4 +1,4 @@
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1200px) {
   header {
     position: fixed;
     height: 80px;
@@ -204,7 +204,7 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
   ::-webkit-scrollbar {
     display: none;
   }

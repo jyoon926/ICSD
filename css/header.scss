@@ -1,7 +1,7 @@
 $bg: white;
 $dark: #232423;
 $accent: black;
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1200px) {
     header {
         position: fixed;
         height: 80px;
@@ -148,7 +148,7 @@ $accent: black;
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1200px) {
     ::-webkit-scrollbar {
         display: none;
     }

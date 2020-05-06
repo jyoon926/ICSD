@@ -55,17 +55,17 @@ section {
         justify-content: flex-end;
         align-items: flex-start;
         h1 {
-            font-size: 6vw;
+            font-size: 8em;
             font-weight: 400;
-            margin: 0 0 40px 0;
+            margin: 0 0 60px 0;
             line-height: 1;
         }
         h2 {
             margin-bottom: 10px;
         }
         .p {
-            font-size: 1.5em;
-            line-height: 1.618;
+            font-size: 2em;
+            line-height: 1.5;
             width: 80%;
             margin-left: 20%;
             b {
@@ -77,17 +77,14 @@ section {
 .banner {
     width: calc(80% - 80px);
     margin-left: 20%;
-    height: 30vw;
-    background: url(../img/PLTW.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    padding: 0;
 }
 .section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 60px;
     .text {
         color: $accent;
         display: flex;
@@ -113,6 +110,9 @@ section {
             margin-bottom: 40px;
         }
     }
+}
+.big .text p {
+    font-size: 1.2em;
 }
 .section2 {
     .text {
@@ -149,7 +149,6 @@ section {
     .banner {
         width: calc(100% - 160px);
         margin-left: 80px;
-        height: 30vw;
     }
     .top .row2 {
         padding-right: 0;
@@ -157,10 +156,10 @@ section {
     .top {
         .text {
             h1 {
-                font-size: 7vw;
+                font-size: 6em;
             }
             p{
-                font-size: 1.3em;
+                font-size: 1.5em;
             }
         }
     }
@@ -190,7 +189,7 @@ section {
         margin: 200px 30px;
         .text {
             h1 {
-                font-size: 3em;
+                font-size: 13vw;
                 font-weight: 400;
                 margin: 0 0 40px 0;
             }
@@ -198,7 +197,7 @@ section {
                 margin-bottom: 10px;
             }
             .p {
-                font-size: 1.25em;
+                font-size: 1.5em;
                 width: 100%;
                 margin-left: 0;
             }
@@ -207,7 +206,6 @@ section {
     .banner {
         width: calc(100% - 60px);
         margin-left: 30px;
-        height: 40vw;
     }
     .section {
         .text {
