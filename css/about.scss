@@ -107,7 +107,7 @@ section {
     .person {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         margin-bottom: 80px;
         &:last-child {
@@ -115,7 +115,7 @@ section {
         }
         img {
             width: 300px;
-            padding-right: 40px;
+            padding-right: 60px;
         }
         .text {
             display: flex;
@@ -156,6 +156,9 @@ section {
     }
     .section3 {
         padding-right: 0;
+        .person {
+            align-items: flex-start;
+        }
     }
 }
 

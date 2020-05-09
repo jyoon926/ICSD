@@ -42,7 +42,7 @@ function scrollFunction() {
 
 //Image slider
 function set(n) {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 7; i++) {
         if (i == n) {
             document.getElementById("landerimg" + i).style.opacity = "1";
             document.getElementById("button" + i).classList.add("selected");
