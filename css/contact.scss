@@ -1,37 +1,57 @@
 $bg: white;
 $black: black;
 $accent: rgb(55, 37, 211);
-.content {
-    width: calc(100vw - 160px);
-    padding: 80px 80px 0 80px;
-}
 
 .lander {
-    color: $black;
+    height: 100vh;
+    width: 20%;
+    padding: 40px 40px 0 40px;
+    box-sizing: border-box;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: static;
+        top: 40px;
+        a {
+            color: $black;
+            font-size: 1em;
+            line-height: 1.618;
+            transition-duration: .4s;
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 80px 0;
-    margin-top: 80px;
     box-sizing: border-box;
-    #landerimg {
-        background-image: url('../img/marvin\ closeup.jpg');
-        background-size: cover;
-        background-position: right;
-        width: calc(50% - 80px);
-        height: calc(100vh - 80px - 80px - 80px);
-    }
+    width: 100%;
     h1 {
-        font-size: 5em;
+        font-size: 8em;
         font-weight: 400;
-        margin: 0 0 40px 0;
+        margin: 0 0 60px 0;
+        line-height: 1;
     }
     form {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 1000px;
+        max-width: 800px;
         align-items: flex-start;
         p {
             margin-bottom: 14px;
@@ -78,17 +98,16 @@ $accent: rgb(55, 37, 211);
         }
     }
 }
-@media screen and (max-width: 1199px) {
-    .content {
-        width: calc(100vw - 60px);
-        padding: 30px;
+@media screen and (max-width: 1200px) {
+    .lander {
+        display: none;
     }
-    .lander h1 {
-        font-size: 4em;
+    .contact h1 {
+        font-size: 6em;
     }
 }
 @media screen and (max-width: 900px) {
-    .lander h1 {
-        font-size: 2.75em;
+    .contact h1 {
+        font-size: 3em;
     }
 }

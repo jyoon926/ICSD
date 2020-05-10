@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/submissions.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/logo_icon.png" />
-        <script src="js/jquery.nicescroll.js"></script>
     </head>
-    <body onload="init()">
+    <body>
         <canvas id="canvas"></canvas>
         <div id="loader">
             <img src="img/logo_header.svg" alt="">
@@ -25,21 +25,28 @@
                 <label for="checkbox" class="menu-icon transition"><img src="img/menu.svg" alt=""></label>
                 <a href="/" class="logo-header">IHSTSA</a>
                 <div id="header-links">
-                    <a href="/" class="transition">Home</a>
+                    <a href="/">Home</a>
                     <a href="about">About</a>
                     <a href="fundraising">Fundraising</a>
                     <a href="submissions">Submissions</a>
                     <a href="courses">Courses</a>
-                    <a href="contact" class="transition">Contact</a>
+                    <a href="contact">Contact</a>
                 </div>
             </div>
         </header>
-        
-        <a href="/" id="back">&#8592; Back to home</a>
+        <div class="lander" id="lander">
+            <div id="links">
+                <a href="/">Home</a>
+                <a href="about">About</a>
+                <a href="fundraising">Fundraising</a>
+                <a href="submissions">Submissions</a>
+                <a href="courses">Courses</a>
+                <a href="contact">Contact</a>
+            </div>
+        </div>
 
-        <div class="content">
-
-            <div class="lander">
+        <section class="top">
+            <div class="contact">
                 <h1>Send us a message!</h1>
                 <form action="https://formspree.io/contact@ihstsa.us" method="POST" novalidate>
                     <p>Name</p>
@@ -54,7 +61,7 @@
                 </form>
                 <h2>Or send an email to <a href="mailto:contact@ihstsa.us" target="none">contact@ihstsa.us</a>.</h2>
             </div>
-        </div>
+        </section>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.6725914862113!2d-76.50054378454064!3d42.45598187918059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0822b08fd500f%3A0xb86ac8ee67c6b390!2sIthaca%20High%20School!5e0!3m2!1sen!2sus!4v1578764854676!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <footer>
@@ -85,8 +92,5 @@
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="js/script.js"></script>
-        <script>
-            $("body").niceScroll();
-        </script>
     </body>
 </html>

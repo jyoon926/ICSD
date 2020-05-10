@@ -1,10 +1,59 @@
-.content {
-  width: calc(100vw - 160px);
-  padding: 80px 80px 0 80px;
+.lander {
+  height: 100vh;
+  width: 20%;
+  padding: 40px 40px 0 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.lander {
+.lander #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: static;
+  top: 40px;
+}
+
+.lander #links a {
   color: black;
+  font-size: 1em;
+  line-height: 1.618;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.lander #links a:hover {
+  color: #3725d3;
+}
+
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,27 +67,19 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 80px 0;
-  margin-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
 }
 
-.lander #landerimg {
-  background-image: url("../img/marvin closeup.jpg");
-  background-size: cover;
-  background-position: right;
-  width: calc(50% - 80px);
-  height: calc(100vh - 80px - 80px - 80px);
-}
-
-.lander h1 {
-  font-size: 5em;
+.contact h1 {
+  font-size: 8em;
   font-weight: 400;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
+  line-height: 1;
 }
 
-.lander form {
+.contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,17 +88,17 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.lander form p {
+.contact form p {
   margin-bottom: 14px;
 }
 
-.lander form .textbox {
+.contact form .textbox {
   background: rgba(0, 0, 0, 0.1);
   color: black;
   font-size: 1em;
@@ -71,65 +112,64 @@
   margin-bottom: 40px;
 }
 
-.lander form .textbox:focus {
+.contact form .textbox:focus {
   border: 2px solid black;
 }
 
-.lander form .textbox::-webkit-input-placeholder {
+.contact form .textbox::-webkit-input-placeholder {
   color: black;
 }
 
-.lander form .textbox:-ms-input-placeholder {
+.contact form .textbox:-ms-input-placeholder {
   color: black;
 }
 
-.lander form .textbox::-ms-input-placeholder {
+.contact form .textbox::-ms-input-placeholder {
   color: black;
 }
 
-.lander form .textbox::placeholder {
+.contact form .textbox::placeholder {
   color: black;
 }
 
-.lander form textarea {
+.contact form textarea {
   height: 400px;
   resize: vertical;
 }
 
-.lander form textarea:focus {
+.contact form textarea:focus {
   height: 403px;
 }
 
-.lander form .send {
+.contact form .send {
   color: white;
   font-size: 1em;
   text-decoration: none;
   border: none;
 }
 
-.lander h2 {
+.contact h2 {
   font-size: 1.5em;
   margin: 60px 0 40px 0;
 }
 
-.lander h2 a {
+.contact h2 a {
   color: #3725d3;
   border-bottom: 2px solid #3725d3;
 }
 
-@media screen and (max-width: 1199px) {
-  .content {
-    width: calc(100vw - 60px);
-    padding: 30px;
+@media screen and (max-width: 1200px) {
+  .lander {
+    display: none;
   }
-  .lander h1 {
-    font-size: 4em;
+  .contact h1 {
+    font-size: 6em;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .lander h1 {
-    font-size: 2.75em;
+  .contact h1 {
+    font-size: 3em;
   }
 }
 /*# sourceMappingURL=contact.css.map */
