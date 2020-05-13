@@ -211,7 +211,7 @@ section {
         .buttons {
             position: static;
             height: 80px;
-            width: 80%;
+            width: 100vw;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -220,19 +220,6 @@ section {
             right: 0;
             box-sizing: border-box;
             padding: 0 40px;
-            .button1 {
-                height: 8px;
-                width: 8px;
-                background: $black;
-                margin-right: 30px;
-                border: 2px solid black;
-            }
-            .button2 {
-                height: 8px;
-                width: 8px;
-                background: none;
-                border: 2px solid black;
-            }
         }
         .p {
             z-index: 1;
