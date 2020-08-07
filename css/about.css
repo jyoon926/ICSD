@@ -352,7 +352,7 @@ section {
     padding-bottom: 0;
   }
   .section2 .col img {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   .section2 .del {
     display: none;
@@ -398,8 +398,8 @@ section {
   }
   .section3 .person img {
     width: 100%;
-    padding-right: 0;
-    padding-bottom: 40px;
+    margin-right: 0;
+    margin-bottom: 40px;
   }
   .section3 .person .text {
     display: -webkit-box;
