@@ -53,21 +53,22 @@ $accent: rgb(55, 37, 211);
         width: 100%;
         max-width: 800px;
         align-items: flex-start;
-        p {
+        label {
             margin-bottom: 14px;
         }
         .textbox {
+            //all: unset;
             background: rgba(0, 0, 0, .1);
             color: $black;
             font-size: 1em;
             padding: 16px;
             width: 100%;
-            border: 0; 
             border: 2px solid rgba(0, 0, 0, 0);
-            border-bottom: 2px solid $black;
             border-radius: 0;
             outline: none;
+            // border-bottom: 2px solid $black;
             margin-bottom: 40px;
+            transition-duration: 0.4s;
             &:focus {
                 border: 2px solid $black;
             }
@@ -87,6 +88,7 @@ $accent: rgb(55, 37, 211);
             font-size: 1em;
             text-decoration: none;
             border: none;
+            border-radius: 0;
         }
     }
     h2 {

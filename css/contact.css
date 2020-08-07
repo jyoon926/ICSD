@@ -94,7 +94,7 @@
           align-items: flex-start;
 }
 
-.contact form p {
+.contact form label {
   margin-bottom: 14px;
 }
 
@@ -104,12 +104,12 @@
   font-size: 1em;
   padding: 16px;
   width: 100%;
-  border: 0;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-bottom: 2px solid black;
   border-radius: 0;
   outline: none;
   margin-bottom: 40px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .contact form .textbox:focus {
@@ -146,6 +146,7 @@
   font-size: 1em;
   text-decoration: none;
   border: none;
+  border-radius: 0;
 }
 
 .contact h2 {

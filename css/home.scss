@@ -146,6 +146,27 @@ section {
         }
     }
 }
+.donate {
+    a {
+        background: linear-gradient(to right, $accent, $black);
+        box-sizing: border-box;
+        padding: 80px;
+        color: $bg;
+        font-size: 3em;
+        transition-duration: .4s;
+        border-radius: 15px;
+        p {
+            color: $bg;
+            font-size: 0.33em;
+            margin: 0;
+            margin-top: 20px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 20px 40px -20px black;
+        }
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .lander {
@@ -268,6 +289,16 @@ section {
                 font-size: 1.5em;
                 line-height: 1.1;
                 padding-bottom: 14px;
+            }
+        }
+    }
+    .donate {
+        a {
+            padding: 40px;
+            font-size: 2em;
+            line-height: 1;
+            p {
+                font-size: 0.5em;
             }
         }
     }

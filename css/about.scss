@@ -89,8 +89,9 @@ section {
         }
     }
     img {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
         width: 100%;
+        border-radius: 15px;
     }
 }
 .section3 {
@@ -115,7 +116,8 @@ section {
         }
         img {
             width: 300px;
-            padding-right: 60px;
+            margin-right: 60px;
+            border-radius: 15px;
         }
         .text {
             display: flex;

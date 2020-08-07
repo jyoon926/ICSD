@@ -48,14 +48,14 @@
             <div class="contact">
                 <h1>Send us a message!</h1>
                 <form action="https://formspree.io/contact@ihstsa.us" method="POST" novalidate>
-                    <p>Name</p>
-                    <input class="textbox" type="text" name="name" required>
-                    <p>Email</p>
-                    <input class="textbox" type="email" name="_replyto" required>
-                    <p>Subject</p>
-                    <input class="textbox" type="text" name="subject" required/>
-                    <p>Message</p>
-                    <textarea class="textbox" name="message" required></textarea>
+                    <label for="name">Name</label>
+                    <input class="textbox" type="text" name="name" id="name" required>
+                    <label for="email">Email</label>
+                    <input class="textbox" type="email" name="_replyto" id="email" required>
+                    <label for="subject">Subject</label>
+                    <input class="textbox" type="text" name="subject" id="subject" required/>
+                    <label for="message">Message</label>
+                    <textarea class="textbox" name="message" id="message" required></textarea>
                     <input class="send button" type="submit" value="Send">
                 </form>
                 <h2>Or send an email to <a href="mailto:contact@ihstsa.us" target="none">contact@ihstsa.us</a>.</h2>
