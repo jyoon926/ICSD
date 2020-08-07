@@ -209,8 +209,7 @@ section div h3 {
 }
 
 .donate a {
-  background: -webkit-gradient(linear, left top, right top, from(#3725d3), to(black));
-  background: linear-gradient(to right, #3725d3, black);
+  background: linear-gradient(110deg, #3725d3, black);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 80px;
