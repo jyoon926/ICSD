@@ -87,7 +87,6 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  pointer-events: none;
 }
 
 #loader p {
@@ -108,7 +107,7 @@ iframe {
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: .1;
+  opacity: .08;
   z-index: 100;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;

@@ -1,3 +1,44 @@
+//Carousel Hover Arrow Cursor
+var offset = 10;
+var $win = $(window);
+
+var hovering;
+var left = true;
+document.addEventListener("mousemove", e => {
+    if (window.innerWidth > 1000) {
+        document.getElementById('cursor').style.top = parseInt(e.pageY, 10) - $win.scrollTop() - 50 + "px";
+        document.getElementById('cursor').style.left = parseInt(e.pageX, 10) - 50 + "px";
+        if (e.pageX < (window.innerWidth - document.getElementById('landerimg0').offsetWidth / 2)) {
+            if (hovering)
+                document.getElementById('cursor').style.transform = "scale(1) scaleX(-1)";
+            else
+                document.getElementById('cursor').style.transform = "scale(0) scaleX(-1)";
+            left = true;
+        }
+        else {
+            if (hovering)
+                document.getElementById('cursor').style.transform = "scale(1) scaleX(1)";
+            else
+                document.getElementById('cursor').style.transform = "scale(0) scaleX(1)";
+            left = false;
+        }
+    }
+})
+$(".image").mouseover(function(){
+    hovering = true;
+    $("html").css("cursor", "none");
+});
+$(".image").mouseout(function(){
+    $("html").css("cursor", "auto");
+    hovering = false;
+    if (left) {
+        document.getElementById('cursor').style.transform = "scale(0) scaleX(-1)";
+    }
+    else {
+        document.getElementById('cursor').style.transform = "scale(0) scaleX(1)";
+    }
+});
+
 //Loader
 window.onload = function load() {
 }
@@ -41,18 +82,51 @@ function scrollFunction() {
 }
 
 //Image slider
+var currentImage = 0;
 function set(n) {
+    currentImage = n;
+    clearInterval(timer);
+    timer = setInterval(nextImage, 6000);
     for (i = 0; i < 7; i++) {
         if (i == n) {
             document.getElementById("landerimg" + i).style.opacity = "1";
-            document.getElementById("button" + i).classList.add("selected");
+            document.getElementById("button" + i).style.background = "black";
         }
         else {
             document.getElementById("landerimg" + i).style.opacity = "0";
-            document.getElementById("button" + i).classList.remove("selected");
+            document.getElementById("button" + i).style.background = "none";
         }
     }
 }
+$(".image").click(function(){
+    clearInterval(timer);
+    timer = setInterval(nextImage, 6000);
+    if (left) {
+        if (currentImage > 0) {
+            set(currentImage - 1);
+        }
+        else {
+            set(6);
+        }
+    }
+    else {
+        if (currentImage < 6) {
+            set(currentImage + 1);
+        }
+        else {
+            set(0);
+        }
+    }
+});
+function nextImage() {
+    if (currentImage < 6) {
+        set(currentImage + 1);
+    }
+    else {
+        set(0);
+    }
+}
+var timer = setInterval(nextImage, 6000);
 
 //Back
 function goBack() {
@@ -71,7 +145,7 @@ function resize() {
 resize();
 window.onresize = resize;
 
-function noise(ctx) {
+function noise() {
     
     var w = ctx.canvas.width,
         h = ctx.canvas.height,
@@ -84,17 +158,7 @@ function noise(ctx) {
         buffer32[i++] = ((255 * Math.random())|0) << 24;
     
     ctx.putImageData(idata, 0, 0);
+
+    setTimeout(noise, 30);
 }
-
-var toggle = true;
-
-// added toggle to get 30 FPS instead of 60 FPS
-(function loop() {
-    toggle = !toggle;
-    if (toggle) {
-        requestAnimationFrame(loop);
-        return;
-    }
-    noise(ctx);
-    requestAnimationFrame(loop);
-})();
+noise();
