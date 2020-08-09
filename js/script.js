@@ -10,16 +10,16 @@ document.addEventListener("mousemove", e => {
         document.getElementById('cursor').style.left = parseInt(e.pageX, 10) - 50 + "px";
         if (e.pageX < (window.innerWidth - document.getElementById('landerimg0').offsetWidth / 2)) {
             if (hovering)
-                document.getElementById('cursor').style.transform = "scale(1) scaleX(-1)";
+                document.getElementById('cursor').style.transform = "scale(1) rotate(-180deg)";
             else
-                document.getElementById('cursor').style.transform = "scale(0) scaleX(-1)";
+                document.getElementById('cursor').style.transform = "scale(0) rotate(-180deg)";
             left = true;
         }
         else {
             if (hovering)
-                document.getElementById('cursor').style.transform = "scale(1) scaleX(1)";
+                document.getElementById('cursor').style.transform = "scale(1) rotate(0)";
             else
-                document.getElementById('cursor').style.transform = "scale(0) scaleX(1)";
+                document.getElementById('cursor').style.transform = "scale(0) rotate(0)";
             left = false;
         }
     }
@@ -32,10 +32,10 @@ $(".image").mouseout(function(){
     $("html").css("cursor", "auto");
     hovering = false;
     if (left) {
-        document.getElementById('cursor').style.transform = "scale(0) scaleX(-1)";
+        document.getElementById('cursor').style.transform = "scale(0) rotate(-180deg)";
     }
     else {
-        document.getElementById('cursor').style.transform = "scale(0) scaleX(1)";
+        document.getElementById('cursor').style.transform = "scale(0) rotate(0)";
     }
 });
 
