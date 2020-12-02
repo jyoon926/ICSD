@@ -147,6 +147,10 @@
   margin-right: 0;
 }
 
+.lander .buttons div:first-child {
+  background: black;
+}
+
 .lander .p {
   z-index: 1;
   width: 400px;
